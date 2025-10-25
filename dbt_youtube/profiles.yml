@@ -1,0 +1,12 @@
+dbt_youtube: # Đặt tên này giống với 'name' trong file dbt_project.yml
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: dbt_user         # Giống user trong docker-compose
+      pass: dbt_password     # Giống password trong docker-compose
+      dbname: youtube_raw_db # Giống db trong docker-compose
+      schema: public         # Schema bạn muốn dbt ghi vào
+      threads: 4

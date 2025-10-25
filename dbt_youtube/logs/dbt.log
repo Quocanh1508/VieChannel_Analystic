@@ -1,0 +1,87 @@
+[0m19:21:12.003672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002161C2591B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002161E46D690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002161E46F400>]}
+
+
+============================== 19:21:12.009135 | 7f098a1c-a798-489e-b3b5-389ad58346d0 ==============================
+[0m19:21:12.009135 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:21:12.009135 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'write_json': 'True', 'log_format': 'default', 'no_print': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\StudyZone\\Project\\mtp-data\\dbt_youtube\\logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\StudyZone\\Project\\mtp-data\\dbt_youtube', 'invocation_command': 'dbt debug', 'printer_width': '80', 'target_path': 'None'}
+[0m19:21:12.031052 [info ] [MainThread]: dbt version: 1.10.13
+[0m19:21:12.031052 [info ] [MainThread]: python version: 3.10.11
+[0m19:21:12.031052 [info ] [MainThread]: python path: C:\StudyZone\Project\mtp-data\.venv\Scripts\python.exe
+[0m19:21:12.031052 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m19:21:12.085955 [info ] [MainThread]: Using profiles dir at C:\StudyZone\Project\mtp-data\dbt_youtube
+[0m19:21:12.100395 [info ] [MainThread]: Using profiles.yml file at C:\StudyZone\Project\mtp-data\dbt_youtube\profiles.yml
+[0m19:21:12.100900 [info ] [MainThread]: Using dbt_project.yml file at C:\StudyZone\Project\mtp-data\dbt_youtube\dbt_project.yml
+[0m19:21:12.101904 [info ] [MainThread]: adapter type: postgres
+[0m19:21:12.101904 [info ] [MainThread]: adapter version: 1.9.1
+[0m19:21:12.169433 [info ] [MainThread]: Configuration:
+[0m19:21:12.186784 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:21:12.186784 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:21:12.186784 [info ] [MainThread]: Required dependencies:
+[0m19:21:12.186784 [debug] [MainThread]: Executing "git --help"
+[0m19:21:12.333679 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:21:12.333679 [debug] [MainThread]: STDERR: "b''"
+[0m19:21:12.333679 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:21:12.338090 [info ] [MainThread]: Connection:
+[0m19:21:12.338090 [info ] [MainThread]:   host: localhost
+[0m19:21:12.338090 [info ] [MainThread]:   port: 5432
+[0m19:21:12.338090 [info ] [MainThread]:   user: dbt_user
+[0m19:21:12.338090 [info ] [MainThread]:   database: youtube_raw_db
+[0m19:21:12.338090 [info ] [MainThread]:   schema: public
+[0m19:21:12.338090 [info ] [MainThread]:   connect_timeout: 10
+[0m19:21:12.338090 [info ] [MainThread]:   role: None
+[0m19:21:12.338090 [info ] [MainThread]:   search_path: None
+[0m19:21:12.338090 [info ] [MainThread]:   keepalives_idle: 0
+[0m19:21:12.343928 [info ] [MainThread]:   sslmode: None
+[0m19:21:12.344682 [info ] [MainThread]:   sslcert: None
+[0m19:21:12.345311 [info ] [MainThread]:   sslkey: None
+[0m19:21:12.345311 [info ] [MainThread]:   sslrootcert: None
+[0m19:21:12.346628 [info ] [MainThread]:   application_name: dbt
+[0m19:21:12.346628 [info ] [MainThread]:   retries: 1
+[0m19:21:12.347299 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m19:21:12.544443 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m19:21:12.623734 [debug] [MainThread]: Using postgres connection "debug"
+[0m19:21:12.623734 [debug] [MainThread]: On debug: select 1 as id
+[0m19:21:12.625745 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:21:12.679575 [debug] [MainThread]: SQL status: SELECT 1 in 0.068 seconds
+[0m19:21:12.695301 [debug] [MainThread]: On debug: Close
+[0m19:21:12.695301 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:21:12.695301 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:21:12.695301 [debug] [MainThread]: Command `dbt debug` succeeded at 19:21:12.695301 after 0.86 seconds
+[0m19:21:12.695301 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:21:12.695301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002161C2591B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002161E46CFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002161E696710>]}
+[0m19:21:12.695301 [debug] [MainThread]: Flushing usage events
+[0m19:21:13.950894 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:32:35.701509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FE6C9CFA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FE8EAD6F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FE8EAE9B0>]}
+
+
+============================== 19:32:35.704281 | 3affe1dd-c942-40e5-8e08-6a4d1d24eb06 ==============================
+[0m19:32:35.704281 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:32:35.704281 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'use_colors': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'no_print': 'None', 'warn_error': 'None', 'log_path': 'C:\\StudyZone\\Project\\mtp-data\\dbt_youtube\\logs', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\StudyZone\\Project\\mtp-data\\dbt_youtube', 'invocation_command': 'dbt run', 'printer_width': '80', 'write_json': 'True'}
+[0m19:32:35.903928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3affe1dd-c942-40e5-8e08-6a4d1d24eb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FE900B430>]}
+[0m19:32:35.943740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3affe1dd-c942-40e5-8e08-6a4d1d24eb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FE8C77C40>]}
+[0m19:32:35.943740 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m19:32:36.115003 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m19:32:36.130778 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:32:36.130778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3affe1dd-c942-40e5-8e08-6a4d1d24eb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FE9155C60>]}
+[0m19:32:36.726136 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.dbt_youtube.bronze
+- models.dbt_youtube.gold
+- models.dbt_youtube.silver
+[0m19:32:36.726136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3affe1dd-c942-40e5-8e08-6a4d1d24eb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FE948BFD0>]}
+[0m19:32:36.767976 [debug] [MainThread]: Wrote artifact WritableManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\manifest.json
+[0m19:32:36.767976 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\semantic_manifest.json
+[0m19:32:36.792486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3affe1dd-c942-40e5-8e08-6a4d1d24eb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FEA51D8A0>]}
+[0m19:32:36.792486 [info ] [MainThread]: Found 447 macros
+[0m19:32:36.792486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3affe1dd-c942-40e5-8e08-6a4d1d24eb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FEA51EDD0>]}
+[0m19:32:36.792486 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:32:36.792486 [debug] [MainThread]: Command end result
+[0m19:32:36.810735 [debug] [MainThread]: Wrote artifact WritableManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\manifest.json
+[0m19:32:36.815386 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\semantic_manifest.json
+[0m19:32:36.818969 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\StudyZone\Project\mtp-data\dbt_youtube\target\run_results.json
+[0m19:32:36.820194 [debug] [MainThread]: Command `dbt run` succeeded at 19:32:36.820194 after 1.27 seconds
+[0m19:32:36.821202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FE6C9CFA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FE9008B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014FE6F74D90>]}
+[0m19:32:36.822200 [debug] [MainThread]: Flushing usage events
+[0m19:32:38.152857 [debug] [MainThread]: An error was encountered while trying to flush usage events
