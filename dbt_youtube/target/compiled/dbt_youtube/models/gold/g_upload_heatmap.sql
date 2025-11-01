@@ -1,11 +1,13 @@
 
 
 with v as (
-  select distinct
+  select
     video_id
-    , any_value(video_published_at) as "VIDEO_PUBLISHED_AT"
+    -- SỬA LỖI 1 & 2: Dùng MIN (Postgres) VÀ cột CHỮ HOA
+    , MIN("VIDEO_PUBLISHED_AT") as "VIDEO_PUBLISHED_AT"
   from "youtube_raw_db"."public"."stg_videos"
-  where video_published_at is not null
+  -- SỬA LỖI 2: Dùng cột CHỮ HOA
+  where "VIDEO_PUBLISHED_AT" is not null
   group by video_id
 )
 select

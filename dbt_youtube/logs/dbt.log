@@ -8448,3 +8448,2096 @@ parsing.
 [0m13:25:09.603290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5311DCF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53148CEB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C532C03FD0>]}
 [0m13:25:09.604289 [debug] [MainThread]: Flushing usage events
 [0m13:25:10.978762 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:46:45.769213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC783CFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC91F7BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC9A9CCA0>]}
+
+
+============================== 13:46:45.772646 | 1696b3db-25d1-4dc1-b22e-5bff7b7c61ae ==============================
+[0m13:46:45.772646 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:46:45.773617 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'write_json': 'True', 'invocation_command': 'dbt run', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\QUOC ANH\\.dbt', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': 'C:\\StudyZone\\Project\\mtp-data\\dbt_youtube\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'target_path': 'None'}
+[0m13:46:45.937091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC9A4D420>]}
+[0m13:46:45.989409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC98CD330>]}
+[0m13:46:45.990982 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m13:46:46.222386 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:46:46.415893 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 5 files changed.
+[0m13:46:46.415893 [debug] [MainThread]: Partial parsing: updated file: dbt_youtube://models\gold\g_duration_distribution.sql
+[0m13:46:46.417088 [debug] [MainThread]: Partial parsing: updated file: dbt_youtube://models\gold\g_video_rankings.sql
+[0m13:46:46.417088 [debug] [MainThread]: Partial parsing: updated file: dbt_youtube://models\gold\g_channel_overview.sql
+[0m13:46:46.419070 [debug] [MainThread]: Partial parsing: updated file: dbt_youtube://models\gold\g_upload_heatmap.sql
+[0m13:46:46.420071 [debug] [MainThread]: Partial parsing: updated file: dbt_youtube://models\gold\g_content_mix.sql
+[0m13:46:46.744256 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values`. Arguments to generic tests
+should be nested under the `arguments` property.`
+[0m13:46:46.745229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCA1D7730>]}
+[0m13:46:46.883624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCB380130>]}
+[0m13:46:46.967554 [debug] [MainThread]: Wrote artifact WritableManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\manifest.json
+[0m13:46:46.969583 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\semantic_manifest.json
+[0m13:46:46.996069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCB382920>]}
+[0m13:46:46.997067 [info ] [MainThread]: Found 13 models, 45 data tests, 4 sources, 447 macros
+[0m13:46:46.998063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCB382830>]}
+[0m13:46:47.000175 [info ] [MainThread]: 
+[0m13:46:47.000175 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:46:47.000175 [info ] [MainThread]: 
+[0m13:46:47.001682 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m13:46:47.005736 [debug] [ThreadPool]: Acquiring new postgres connection 'list_youtube_raw_db'
+[0m13:46:47.078242 [debug] [ThreadPool]: Using postgres connection "list_youtube_raw_db"
+[0m13:46:47.078242 [debug] [ThreadPool]: On list_youtube_raw_db: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "connection_name": "list_youtube_raw_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m13:46:47.079242 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:46:47.107224 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.028 seconds
+[0m13:46:47.108257 [debug] [ThreadPool]: On list_youtube_raw_db: Close
+[0m13:46:47.110006 [debug] [ThreadPool]: Acquiring new postgres connection 'list_youtube_raw_db_public'
+[0m13:46:47.115478 [debug] [ThreadPool]: Using postgres connection "list_youtube_raw_db_public"
+[0m13:46:47.116612 [debug] [ThreadPool]: On list_youtube_raw_db_public: BEGIN
+[0m13:46:47.116612 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:46:47.129050 [debug] [ThreadPool]: SQL status: BEGIN in 0.013 seconds
+[0m13:46:47.130051 [debug] [ThreadPool]: Using postgres connection "list_youtube_raw_db_public"
+[0m13:46:47.130051 [debug] [ThreadPool]: On list_youtube_raw_db_public: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "connection_name": "list_youtube_raw_db_public"} */
+select
+      'youtube_raw_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'youtube_raw_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'youtube_raw_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m13:46:47.135566 [debug] [ThreadPool]: SQL status: SELECT 11 in 0.005 seconds
+[0m13:46:47.136566 [debug] [ThreadPool]: On list_youtube_raw_db_public: ROLLBACK
+[0m13:46:47.137597 [debug] [ThreadPool]: On list_youtube_raw_db_public: Close
+[0m13:46:47.143698 [debug] [MainThread]: Using postgres connection "master"
+[0m13:46:47.144709 [debug] [MainThread]: On master: BEGIN
+[0m13:46:47.144709 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:46:47.157590 [debug] [MainThread]: SQL status: BEGIN in 0.013 seconds
+[0m13:46:47.158645 [debug] [MainThread]: Using postgres connection "master"
+[0m13:46:47.158645 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m13:46:47.165413 [debug] [MainThread]: SQL status: SELECT 9 in 0.005 seconds
+[0m13:46:47.167574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC764F640>]}
+[0m13:46:47.168557 [debug] [MainThread]: On master: ROLLBACK
+[0m13:46:47.169583 [debug] [MainThread]: Using postgres connection "master"
+[0m13:46:47.169583 [debug] [MainThread]: On master: BEGIN
+[0m13:46:47.171552 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m13:46:47.171552 [debug] [MainThread]: On master: COMMIT
+[0m13:46:47.171552 [debug] [MainThread]: Using postgres connection "master"
+[0m13:46:47.172619 [debug] [MainThread]: On master: COMMIT
+[0m13:46:47.173647 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m13:46:47.173647 [debug] [MainThread]: On master: Close
+[0m13:46:47.178018 [debug] [Thread-1 (]: Began running node model.dbt_youtube.br_channels
+[0m13:46:47.179006 [debug] [Thread-2 (]: Began running node model.dbt_youtube.br_playlist_items
+[0m13:46:47.179006 [debug] [Thread-3 (]: Began running node model.dbt_youtube.br_playlists
+[0m13:46:47.180002 [debug] [Thread-4 (]: Began running node model.dbt_youtube.br_video_stats
+[0m13:46:47.180002 [info ] [Thread-1 (]: 1 of 13 START sql view model public.br_channels ................................ [RUN]
+[0m13:46:47.180002 [info ] [Thread-2 (]: 2 of 13 START sql view model public.br_playlist_items .......................... [RUN]
+[0m13:46:47.181521 [info ] [Thread-3 (]: 3 of 13 START sql view model public.br_playlists ............................... [RUN]
+[0m13:46:47.181521 [info ] [Thread-4 (]: 4 of 13 START sql view model public.br_video_stats ............................. [RUN]
+[0m13:46:47.182698 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.dbt_youtube.br_channels'
+[0m13:46:47.183860 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.dbt_youtube.br_playlist_items'
+[0m13:46:47.183860 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.dbt_youtube.br_playlists'
+[0m13:46:47.185022 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.dbt_youtube.br_video_stats'
+[0m13:46:47.185022 [debug] [Thread-1 (]: Began compiling node model.dbt_youtube.br_channels
+[0m13:46:47.185022 [debug] [Thread-2 (]: Began compiling node model.dbt_youtube.br_playlist_items
+[0m13:46:47.186538 [debug] [Thread-3 (]: Began compiling node model.dbt_youtube.br_playlists
+[0m13:46:47.187114 [debug] [Thread-4 (]: Began compiling node model.dbt_youtube.br_video_stats
+[0m13:46:47.192911 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_youtube.br_channels"
+[0m13:46:47.195677 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_youtube.br_playlist_items"
+[0m13:46:47.197709 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_youtube.br_playlists"
+[0m13:46:47.201692 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_youtube.br_video_stats"
+[0m13:46:47.202326 [debug] [Thread-1 (]: Began executing node model.dbt_youtube.br_channels
+[0m13:46:47.203152 [debug] [Thread-2 (]: Began executing node model.dbt_youtube.br_playlist_items
+[0m13:46:47.204650 [debug] [Thread-3 (]: Began executing node model.dbt_youtube.br_playlists
+[0m13:46:47.231978 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_youtube.br_channels"
+[0m13:46:47.235452 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_youtube.br_playlist_items"
+[0m13:46:47.235452 [debug] [Thread-4 (]: Began executing node model.dbt_youtube.br_video_stats
+[0m13:46:47.238825 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_youtube.br_playlists"
+[0m13:46:47.239835 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:46:47.243272 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_youtube.br_video_stats"
+[0m13:46:47.243272 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:46:47.244242 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: BEGIN
+[0m13:46:47.244242 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:46:47.245614 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: BEGIN
+[0m13:46:47.245614 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:46:47.246635 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:46:47.246635 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: BEGIN
+[0m13:46:47.247634 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:46:47.247634 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: BEGIN
+[0m13:46:47.248634 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:46:47.249634 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:46:47.260537 [debug] [Thread-1 (]: SQL status: BEGIN in 0.015 seconds
+[0m13:46:47.261539 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:46:47.262798 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_channels"} */
+
+  create view "youtube_raw_db"."public"."br_channels__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+  channel_id,
+  title,
+  "customUrl",
+  "publishedAt"::timestamp as "PUBLISHED_AT",
+  country,
+  "subscriberCount"::bigint as "SUBSCRIBER_COUNT", -- SỬA LỖI Ở ĐÂY
+  "viewCount"::bigint as "VIEW_COUNT",         -- Sửa luôn ở đây
+  "videoCount"::bigint as "VIDEO_COUNT" ,        -- Sửa luôn ở đây
+  thumbnail_high AS "CHANNEL_THUMBNAIL_URL"
+FROM "youtube_raw_db"."public"."raw_channels"
+  );
+[0m13:46:47.262798 [debug] [Thread-3 (]: SQL status: BEGIN in 0.014 seconds
+[0m13:46:47.263800 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:46:47.263800 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlists"} */
+
+  create view "youtube_raw_db"."public"."br_playlists__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    playlist_id,
+    playlist_title,
+    playlist_desc,
+    published_at::timestamp AS "PUBLISHED_AT",
+    channel_id,
+    thumb_high AS "PLAYLIST_THUMBNAIL_URL",
+    item_count::bigint AS "ITEM_COUNT"
+FROM "youtube_raw_db"."public"."raw_playlists"
+  );
+[0m13:46:47.264809 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.003 seconds
+[0m13:46:47.267692 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.003 seconds
+[0m13:46:47.273788 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:46:47.275801 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:46:47.277810 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_channels"} */
+alter table "youtube_raw_db"."public"."br_channels" rename to "br_channels__dbt_backup"
+[0m13:46:47.277810 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlists"} */
+alter table "youtube_raw_db"."public"."br_playlists" rename to "br_playlists__dbt_backup"
+[0m13:46:47.277810 [debug] [Thread-4 (]: SQL status: BEGIN in 0.029 seconds
+[0m13:46:47.279103 [debug] [Thread-2 (]: SQL status: BEGIN in 0.032 seconds
+[0m13:46:47.280172 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:46:47.280172 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:46:47.280172 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:46:47.281548 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:46:47.281548 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_video_stats"} */
+
+  create view "youtube_raw_db"."public"."br_video_stats__dbt_tmp"
+    
+    
+  as (
+    
+
+
+with base as (
+  select
+    video_id
+    , video_title
+    , video_desc
+    
+    -- SỬA LỖI 1: dùng CAST chuẩn của SQL/Postgres thay vì hàm try_to_timestamp_ntz của Snowflake
+    , CAST(video_published_at AS timestamp) as "VIDEO_PUBLISHED_AT"
+    , duration_iso8601
+
+    -- SỬA LỖI 2: dùng CAST chuẩn của SQL/Postgres thay vì hàm try_to_number của Snowflake
+    , CAST(view_count AS numeric) as "VIEW_COUNT"
+    , CAST(like_count AS numeric) as "LIKE_COUNT"
+    , CAST(comment_count AS numeric) as "COMMENT_COUNT"
+
+    , CAST(live_actual_start AS timestamp) as "LIVE_ACTUAL_START"
+    , CAST(live_actual_end AS timestamp)   as "LIVE_ACTUAL_END"
+    , CAST(live_scheduled_start AS timestamp) as "LIVE_SCHEDULED_START"
+  FROM "youtube_raw_db"."public"."raw_video_stats"
+),
+
+parsed as (
+  select
+    *,
+    
+    -- SỬA LỖI 3: dùng hàm substring(... FROM ...) của Postgres thay vì regexp_substr của Snowflake
+    -- và dùng CAST thay vì to_number
+      coalesce(CAST(substring(duration_iso8601 FROM '(\d+)H') AS numeric), 0) * 3600
+    + coalesce(CAST(substring(duration_iso8601 FROM '(\d+)M') AS numeric), 0) * 60
+    + coalesce(CAST(substring(duration_iso8601 FROM '(\d+)S') AS numeric), 0)
+      as "DURATION_SECONDS"
+      
+  from base
+)
+
+select * from parsed
+  );
+[0m13:46:47.282830 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlist_items"} */
+
+  create view "youtube_raw_db"."public"."br_playlist_items__dbt_tmp"
+    
+    
+  as (
+    
+
+
+select
+  "playlistItem_id" AS "PLAYLIST_ITEM_ID", 
+  playlist_id,
+  video_id,
+  video_title as "VIDEO_TITLE_IN_PLAYLIST",
+  video_desc as "VIDEO_DESC_IN_PLAYLIST",
+  
+  CAST(added_to_playlist_at AS timestamp) as "ADDED_TO_PLAYLIST_AT",
+  CAST(video_published_at AS timestamp) as "VIDEO_PUBLISHED_AT",
+  CAST(position_in_playlist AS numeric) as "POSITION_IN_PLAYLIST",
+  
+  snippet__thumbnails__maxres__url AS "VIDEO_THUMBNAIL_URL_IN_PLAYLIST",
+  channel_id
+  
+FROM "youtube_raw_db"."public"."raw_playlist_items"
+  );
+[0m13:46:47.285140 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:46:47.288153 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:46:47.289094 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_channels"} */
+alter table "youtube_raw_db"."public"."br_channels__dbt_tmp" rename to "br_channels"
+[0m13:46:47.289094 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlists"} */
+alter table "youtube_raw_db"."public"."br_playlists__dbt_tmp" rename to "br_playlists"
+[0m13:46:47.290088 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:46:47.291523 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:46:47.303559 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: COMMIT
+[0m13:46:47.304558 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.016 seconds
+[0m13:46:47.304558 [debug] [Thread-4 (]: SQL status: CREATE VIEW in 0.016 seconds
+[0m13:46:47.306295 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: COMMIT
+[0m13:46:47.306295 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:46:47.309667 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:46:47.311775 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:46:47.312800 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:46:47.312800 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: COMMIT
+[0m13:46:47.313792 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlist_items"} */
+alter table "youtube_raw_db"."public"."br_playlist_items" rename to "br_playlist_items__dbt_backup"
+[0m13:46:47.314789 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_video_stats"} */
+alter table "youtube_raw_db"."public"."br_video_stats" rename to "br_video_stats__dbt_backup"
+[0m13:46:47.314789 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: COMMIT
+[0m13:46:47.317052 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:46:47.319045 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:46:47.320045 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m13:46:47.320045 [debug] [Thread-3 (]: SQL status: COMMIT in 0.004 seconds
+[0m13:46:47.320045 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.005 seconds
+[0m13:46:47.320045 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlist_items"} */
+alter table "youtube_raw_db"."public"."br_playlist_items__dbt_tmp" rename to "br_playlist_items"
+[0m13:46:47.372989 [debug] [Thread-1 (]: Applying DROP to: "youtube_raw_db"."public"."br_channels__dbt_backup"
+[0m13:46:47.375560 [debug] [Thread-3 (]: Applying DROP to: "youtube_raw_db"."public"."br_playlists__dbt_backup"
+[0m13:46:47.378661 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:46:47.381612 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:46:47.382763 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.004 seconds
+[0m13:46:47.383730 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:46:47.383730 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_video_stats"} */
+alter table "youtube_raw_db"."public"."br_video_stats__dbt_tmp" rename to "br_video_stats"
+[0m13:46:47.384895 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_channels"} */
+drop view if exists "youtube_raw_db"."public"."br_channels__dbt_backup" cascade
+[0m13:46:47.385298 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: COMMIT
+[0m13:46:47.386826 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlists"} */
+drop view if exists "youtube_raw_db"."public"."br_playlists__dbt_backup" cascade
+[0m13:46:47.387840 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:46:47.387840 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: COMMIT
+[0m13:46:47.387840 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:46:47.390661 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: COMMIT
+[0m13:46:47.390661 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:46:47.391806 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: COMMIT
+[0m13:46:47.391806 [debug] [Thread-2 (]: SQL status: COMMIT in 0.003 seconds
+[0m13:46:47.394399 [debug] [Thread-2 (]: Applying DROP to: "youtube_raw_db"."public"."br_playlist_items__dbt_backup"
+[0m13:46:47.394399 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.007 seconds
+[0m13:46:47.395454 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.007 seconds
+[0m13:46:47.395454 [debug] [Thread-4 (]: SQL status: COMMIT in 0.004 seconds
+[0m13:46:47.396428 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:46:47.398449 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: Close
+[0m13:46:47.399989 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: Close
+[0m13:46:47.401623 [debug] [Thread-4 (]: Applying DROP to: "youtube_raw_db"."public"."br_video_stats__dbt_backup"
+[0m13:46:47.402651 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlist_items"} */
+drop view if exists "youtube_raw_db"."public"."br_playlist_items__dbt_backup" cascade
+[0m13:46:47.405637 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:46:47.406680 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC64FC0A0>]}
+[0m13:46:47.406680 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC8ABFE20>]}
+[0m13:46:47.406680 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_video_stats"} */
+drop view if exists "youtube_raw_db"."public"."br_video_stats__dbt_backup" cascade
+[0m13:46:47.407874 [info ] [Thread-1 (]: 1 of 13 OK created sql view model public.br_channels ........................... [[32mCREATE VIEW[0m in 0.22s]
+[0m13:46:47.408860 [info ] [Thread-3 (]: 3 of 13 OK created sql view model public.br_playlists .......................... [[32mCREATE VIEW[0m in 0.22s]
+[0m13:46:47.409966 [debug] [Thread-1 (]: Finished running node model.dbt_youtube.br_channels
+[0m13:46:47.409966 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.003 seconds
+[0m13:46:47.409966 [debug] [Thread-3 (]: Finished running node model.dbt_youtube.br_playlists
+[0m13:46:47.411470 [debug] [Thread-1 (]: Began running node model.dbt_youtube.stg_channels
+[0m13:46:47.412513 [debug] [Thread-4 (]: SQL status: DROP VIEW in 0.003 seconds
+[0m13:46:47.413497 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: Close
+[0m13:46:47.414478 [debug] [Thread-3 (]: Began running node model.dbt_youtube.stg_playlists
+[0m13:46:47.414478 [info ] [Thread-1 (]: 5 of 13 START sql view model public.stg_channels ............................... [RUN]
+[0m13:46:47.416336 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: Close
+[0m13:46:47.416994 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCB2EE980>]}
+[0m13:46:47.418076 [info ] [Thread-3 (]: 6 of 13 START sql view model public.stg_playlists .............................. [RUN]
+[0m13:46:47.419075 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.br_channels, now model.dbt_youtube.stg_channels)
+[0m13:46:47.420084 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCA236D70>]}
+[0m13:46:47.420084 [info ] [Thread-2 (]: 2 of 13 OK created sql view model public.br_playlist_items ..................... [[32mCREATE VIEW[0m in 0.23s]
+[0m13:46:47.421750 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.br_playlists, now model.dbt_youtube.stg_playlists)
+[0m13:46:47.422765 [debug] [Thread-1 (]: Began compiling node model.dbt_youtube.stg_channels
+[0m13:46:47.423793 [debug] [Thread-2 (]: Finished running node model.dbt_youtube.br_playlist_items
+[0m13:46:47.422765 [info ] [Thread-4 (]: 4 of 13 OK created sql view model public.br_video_stats ........................ [[32mCREATE VIEW[0m in 0.24s]
+[0m13:46:47.424762 [debug] [Thread-3 (]: Began compiling node model.dbt_youtube.stg_playlists
+[0m13:46:47.428138 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_youtube.stg_channels"
+[0m13:46:47.429130 [debug] [Thread-4 (]: Finished running node model.dbt_youtube.br_video_stats
+[0m13:46:47.431522 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_youtube.stg_playlists"
+[0m13:46:47.433208 [debug] [Thread-2 (]: Began running node model.dbt_youtube.stg_videos
+[0m13:46:47.434271 [debug] [Thread-1 (]: Began executing node model.dbt_youtube.stg_channels
+[0m13:46:47.435558 [debug] [Thread-3 (]: Began executing node model.dbt_youtube.stg_playlists
+[0m13:46:47.434271 [info ] [Thread-2 (]: 7 of 13 START sql view model public.stg_videos ................................. [RUN]
+[0m13:46:47.441010 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_youtube.stg_channels"
+[0m13:46:47.443972 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_youtube.stg_playlists"
+[0m13:46:47.444954 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.br_playlist_items, now model.dbt_youtube.stg_videos)
+[0m13:46:47.445954 [debug] [Thread-2 (]: Began compiling node model.dbt_youtube.stg_videos
+[0m13:46:47.445954 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.stg_channels"
+[0m13:46:47.448971 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_youtube.stg_videos"
+[0m13:46:47.450113 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: BEGIN
+[0m13:46:47.450113 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.stg_playlists"
+[0m13:46:47.450113 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:46:47.451617 [debug] [Thread-2 (]: Began executing node model.dbt_youtube.stg_videos
+[0m13:46:47.451617 [debug] [Thread-3 (]: On model.dbt_youtube.stg_playlists: BEGIN
+[0m13:46:47.455624 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_youtube.stg_videos"
+[0m13:46:47.456623 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:46:47.457624 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.stg_videos"
+[0m13:46:47.457624 [debug] [Thread-2 (]: On model.dbt_youtube.stg_videos: BEGIN
+[0m13:46:47.457624 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:46:47.471635 [debug] [Thread-2 (]: SQL status: BEGIN in 0.013 seconds
+[0m13:46:47.471635 [debug] [Thread-3 (]: SQL status: BEGIN in 0.015 seconds
+[0m13:46:47.471635 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.stg_videos"
+[0m13:46:47.472842 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.stg_playlists"
+[0m13:46:47.472842 [debug] [Thread-2 (]: On model.dbt_youtube.stg_videos: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_videos"} */
+
+  create view "youtube_raw_db"."public"."stg_videos__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+  -- SỬA LỖI: Các cột này đến từ 'br_playlist_items' (phải dùng CHỮ HOA)
+  pi."PLAYLIST_ITEM_ID",
+  pi.playlist_id,
+  pi.channel_id,
+  pi.video_id,
+
+  -- SỬA LỖI: Các cột này đến từ 'br_video_stats' (phải dùng CHỮ HOA hoặc chữ thường)
+  s.video_title,
+  s.video_desc,
+  s."VIDEO_PUBLISHED_AT" as "VIDEO_PUBLISHED_AT",
+  s."VIEW_COUNT" as "VIEW_COUNT",
+  s."LIKE_COUNT" as "LIKE_COUNT",
+  s."COMMENT_COUNT" as "COMMENT_COUNT",
+  s."DURATION_SECONDS" as "DURATION_SECONDS",
+  
+  -- Hàm này đã sửa đúng (dùng cột CHỮ HOA)
+  (current_timestamp::date - s."VIDEO_PUBLISHED_AT"::date) as "VIDEO_AGE_DAYS",
+  
+  CASE 
+        -- SỬA LỖI: Dùng cột CHỮ HOA
+        WHEN s."LIVE_SCHEDULED_START" is not null THEN 'Live'
+        WHEN s."DURATION_SECONDS" < 60 THEN 'Shorts'
+        WHEN s."DURATION_SECONDS" is null THEN 'Private videos'
+        ELSE 'Normal videos'
+    END AS "VIDEO_TYPE",
+  
+  CASE
+      -- SỬA LỖI: Dùng cột CHỮ HOA
+      WHEN s."DURATION_SECONDS" <   60 THEN '0-1m'
+      WHEN s."DURATION_SECONDS" <  300 THEN '1-5m'
+      WHEN s."DURATION_SECONDS" <  900 THEN '5-15m'
+      WHEN s."DURATION_SECONDS" < 1800 THEN '15-30m'
+      WHEN s."DURATION_SECONDS" < 3600 THEN '30-60m'
+      ELSE '60m+'
+    END AS "DURATION_BUCKET",
+
+  -- SỬA LỖI: Các cột này đến từ 'br_playlist_items' (phải dùng CHỮ HOA)
+  pi."ADDED_TO_PLAYLIST_AT" AS "VIDEO_ADDED_TO_PLAYLIST_AT",
+  pi."POSITION_IN_PLAYLIST" AS "VIDEO_POSITION_IN_PLAYLIST",
+  pi."VIDEO_THUMBNAIL_URL_IN_PLAYLIST" AS "VIDEO_THUMBNAIL_URL"
+
+from "youtube_raw_db"."public"."br_playlist_items" pi
+left join "youtube_raw_db"."public"."br_video_stats" s
+  -- Join key là chữ thường ở cả 2 file, nên giữ nguyên
+  on pi.video_id = s.video_id
+  );
+[0m13:46:47.473847 [debug] [Thread-3 (]: On model.dbt_youtube.stg_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_playlists"} */
+
+  create view "youtube_raw_db"."public"."stg_playlists__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+  p.*
+  , c.title as channel_title
+from "youtube_raw_db"."public"."br_playlists" p
+left join "youtube_raw_db"."public"."br_channels" c
+  on p.channel_id = c.channel_id
+  );
+[0m13:46:47.475847 [debug] [Thread-1 (]: SQL status: BEGIN in 0.025 seconds
+[0m13:46:47.475847 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.stg_channels"
+[0m13:46:47.476872 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_channels"} */
+
+  create view "youtube_raw_db"."public"."stg_channels__dbt_tmp"
+    
+    
+  as (
+    
+
+
+select
+    * 
+from "youtube_raw_db"."public"."br_channels"
+  );
+[0m13:46:47.477847 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.003 seconds
+[0m13:46:47.478848 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.004 seconds
+[0m13:46:47.480845 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.stg_playlists"
+[0m13:46:47.481899 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.004 seconds
+[0m13:46:47.483936 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.stg_videos"
+[0m13:46:47.484787 [debug] [Thread-3 (]: On model.dbt_youtube.stg_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_playlists"} */
+alter table "youtube_raw_db"."public"."stg_playlists__dbt_tmp" rename to "stg_playlists"
+[0m13:46:47.487798 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.stg_channels"
+[0m13:46:47.488797 [debug] [Thread-2 (]: On model.dbt_youtube.stg_videos: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_videos"} */
+alter table "youtube_raw_db"."public"."stg_videos__dbt_tmp" rename to "stg_videos"
+[0m13:46:47.488797 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_channels"} */
+alter table "youtube_raw_db"."public"."stg_channels__dbt_tmp" rename to "stg_channels"
+[0m13:46:47.489798 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:46:47.491799 [debug] [Thread-3 (]: On model.dbt_youtube.stg_playlists: COMMIT
+[0m13:46:47.492307 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:46:47.492307 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m13:46:47.492307 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.stg_playlists"
+[0m13:46:47.494335 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: COMMIT
+[0m13:46:47.495764 [debug] [Thread-2 (]: On model.dbt_youtube.stg_videos: COMMIT
+[0m13:46:47.496763 [debug] [Thread-3 (]: On model.dbt_youtube.stg_playlists: COMMIT
+[0m13:46:47.496763 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.stg_channels"
+[0m13:46:47.496763 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.stg_videos"
+[0m13:46:47.497763 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: COMMIT
+[0m13:46:47.498764 [debug] [Thread-2 (]: On model.dbt_youtube.stg_videos: COMMIT
+[0m13:46:47.498764 [debug] [Thread-3 (]: SQL status: COMMIT in 0.001 seconds
+[0m13:46:47.501765 [debug] [Thread-3 (]: Applying DROP to: "youtube_raw_db"."public"."stg_playlists__dbt_backup"
+[0m13:46:47.501765 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m13:46:47.502274 [debug] [Thread-2 (]: SQL status: COMMIT in 0.003 seconds
+[0m13:46:47.502274 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.stg_playlists"
+[0m13:46:47.504511 [debug] [Thread-1 (]: Applying DROP to: "youtube_raw_db"."public"."stg_channels__dbt_backup"
+[0m13:46:47.506532 [debug] [Thread-2 (]: Applying DROP to: "youtube_raw_db"."public"."stg_videos__dbt_backup"
+[0m13:46:47.507530 [debug] [Thread-3 (]: On model.dbt_youtube.stg_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_playlists"} */
+drop view if exists "youtube_raw_db"."public"."stg_playlists__dbt_backup" cascade
+[0m13:46:47.508508 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.stg_channels"
+[0m13:46:47.508508 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.stg_videos"
+[0m13:46:47.509532 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_channels"} */
+drop view if exists "youtube_raw_db"."public"."stg_channels__dbt_backup" cascade
+[0m13:46:47.510510 [debug] [Thread-2 (]: On model.dbt_youtube.stg_videos: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_videos"} */
+drop view if exists "youtube_raw_db"."public"."stg_videos__dbt_backup" cascade
+[0m13:46:47.510510 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m13:46:47.512646 [debug] [Thread-3 (]: On model.dbt_youtube.stg_playlists: Close
+[0m13:46:47.512646 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.002 seconds
+[0m13:46:47.513651 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.002 seconds
+[0m13:46:47.513651 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC9817AC0>]}
+[0m13:46:47.516056 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: Close
+[0m13:46:47.517075 [debug] [Thread-2 (]: On model.dbt_youtube.stg_videos: Close
+[0m13:46:47.518054 [info ] [Thread-3 (]: 6 of 13 OK created sql view model public.stg_playlists ......................... [[32mCREATE VIEW[0m in 0.09s]
+[0m13:46:47.519054 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCB933BE0>]}
+[0m13:46:47.519054 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCA255B40>]}
+[0m13:46:47.520248 [debug] [Thread-3 (]: Finished running node model.dbt_youtube.stg_playlists
+[0m13:46:47.520248 [info ] [Thread-1 (]: 5 of 13 OK created sql view model public.stg_channels .......................... [[32mCREATE VIEW[0m in 0.10s]
+[0m13:46:47.521753 [info ] [Thread-2 (]: 7 of 13 OK created sql view model public.stg_videos ............................ [[32mCREATE VIEW[0m in 0.07s]
+[0m13:46:47.522762 [debug] [Thread-1 (]: Finished running node model.dbt_youtube.stg_channels
+[0m13:46:47.522762 [debug] [Thread-2 (]: Finished running node model.dbt_youtube.stg_videos
+[0m13:46:47.524188 [debug] [Thread-4 (]: Began running node model.dbt_youtube.g_channel_overview
+[0m13:46:47.525428 [debug] [Thread-3 (]: Began running node model.dbt_youtube.g_content_mix
+[0m13:46:47.525428 [debug] [Thread-1 (]: Began running node model.dbt_youtube.g_duration_distribution
+[0m13:46:47.526439 [debug] [Thread-2 (]: Began running node model.dbt_youtube.g_playlist_performance
+[0m13:46:47.526439 [info ] [Thread-4 (]: 8 of 13 START sql table model public.g_channel_overview ........................ [RUN]
+[0m13:46:47.527440 [info ] [Thread-3 (]: 9 of 13 START sql table model public.g_content_mix ............................. [RUN]
+[0m13:46:47.528480 [info ] [Thread-1 (]: 10 of 13 START sql table model public.g_duration_distribution .................. [RUN]
+[0m13:46:47.529485 [info ] [Thread-2 (]: 11 of 13 START sql table model public.g_playlist_performance ................... [RUN]
+[0m13:46:47.530485 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.br_video_stats, now model.dbt_youtube.g_channel_overview)
+[0m13:46:47.530485 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.stg_playlists, now model.dbt_youtube.g_content_mix)
+[0m13:46:47.531485 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.stg_channels, now model.dbt_youtube.g_duration_distribution)
+[0m13:46:47.531952 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.stg_videos, now model.dbt_youtube.g_playlist_performance)
+[0m13:46:47.531952 [debug] [Thread-4 (]: Began compiling node model.dbt_youtube.g_channel_overview
+[0m13:46:47.533014 [debug] [Thread-3 (]: Began compiling node model.dbt_youtube.g_content_mix
+[0m13:46:47.533014 [debug] [Thread-1 (]: Began compiling node model.dbt_youtube.g_duration_distribution
+[0m13:46:47.533979 [debug] [Thread-2 (]: Began compiling node model.dbt_youtube.g_playlist_performance
+[0m13:46:47.536979 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_youtube.g_channel_overview"
+[0m13:46:47.538994 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_youtube.g_content_mix"
+[0m13:46:47.543484 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_youtube.g_duration_distribution"
+[0m13:46:47.546502 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_youtube.g_playlist_performance"
+[0m13:46:47.547482 [debug] [Thread-4 (]: Began executing node model.dbt_youtube.g_channel_overview
+[0m13:46:47.548482 [debug] [Thread-3 (]: Began executing node model.dbt_youtube.g_content_mix
+[0m13:46:47.565503 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_youtube.g_channel_overview"
+[0m13:46:47.569648 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_youtube.g_content_mix"
+[0m13:46:47.569648 [debug] [Thread-2 (]: Began executing node model.dbt_youtube.g_playlist_performance
+[0m13:46:47.569648 [debug] [Thread-1 (]: Began executing node model.dbt_youtube.g_duration_distribution
+[0m13:46:47.571634 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_channel_overview"
+[0m13:46:47.574683 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_youtube.g_playlist_performance"
+[0m13:46:47.575294 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_content_mix"
+[0m13:46:47.578407 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_youtube.g_duration_distribution"
+[0m13:46:47.578407 [debug] [Thread-4 (]: On model.dbt_youtube.g_channel_overview: BEGIN
+[0m13:46:47.579434 [debug] [Thread-3 (]: On model.dbt_youtube.g_content_mix: BEGIN
+[0m13:46:47.580407 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m13:46:47.580407 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:46:47.582476 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_playlist_performance"
+[0m13:46:47.582476 [debug] [Thread-2 (]: On model.dbt_youtube.g_playlist_performance: BEGIN
+[0m13:46:47.583472 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.g_duration_distribution"
+[0m13:46:47.584472 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:46:47.584472 [debug] [Thread-1 (]: On model.dbt_youtube.g_duration_distribution: BEGIN
+[0m13:46:47.585477 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:46:47.593495 [debug] [Thread-4 (]: SQL status: BEGIN in 0.013 seconds
+[0m13:46:47.594524 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_channel_overview"
+[0m13:46:47.594524 [debug] [Thread-4 (]: On model.dbt_youtube.g_channel_overview: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_channel_overview"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_channel_overview__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with ch as (
+  select
+    -- SỬA LỖI: Gọi các cột CHỮ HOA từ stg_channels
+    "CHANNEL_ID",
+    "TITLE" as "CHANNEL_TITLE",
+    "CUSTOM_URL" as "CHANNEL_CUSTOM_URL",
+    "PUBLISHED_AT" as "CHANNEL_PUBLISHED_AT",
+    "COUNTRY",
+    "SUBSCRIBER_COUNT",
+    "CHANNEL_VIEW_COUNT",
+    "CHANNEL_VIDEO_COUNT",
+    "CHANNEL_THUMBNAIL_URL"
+  from "youtube_raw_db"."public"."stg_channels"
+),
+
+v as (
+  -- 1 dòng/video để tính Avg Length, Avg Rate
+  select
+    video_id
+    -- SỬA LỖI: Dùng MIN (Postgres) thay vì any_value (Snowflake)
+    -- SỬA LỖI: Gọi các cột CHỮ HOA từ stg_videos
+    , MIN("DURATION_SECONDS") as "DURATION_SECONDS"
+    , MIN("VIEW_COUNT")       as "VIEW_COUNT"
+    , MIN("LIKE_COUNT")       as "LIKE_COUNT"
+    , MIN("COMMENT_COUNT")    as "COMMENT_COUNT"
+  from "youtube_raw_db"."public"."stg_videos"
+  group by video_id
+)
+
+select
+  ch.*,
+  -- SỬA LỖI: Dùng các cột CHỮ HOA từ CTE 'v'
+  avg(v."DURATION_SECONDS")                           as avg_video_length_sec,
+  avg(v."LIKE_COUNT" / nullif(v."VIEW_COUNT", 0))     as avg_like_per_view,
+  avg(v."COMMENT_COUNT" / nullif(v."VIEW_COUNT", 0))  as avg_comment_per_view
+from ch
+left join v on 1=1 -- cross join để lấy avg trên toàn bộ video
+group by
+  -- SỬA LỖI: Group by các cột CHỮ HOA từ CTE 'ch'
+  ch."CHANNEL_ID", ch."CHANNEL_TITLE", ch."CHANNEL_CUSTOM_URL", ch."CHANNEL_PUBLISHED_AT", ch."COUNTRY",
+  ch."SUBSCRIBER_COUNT", ch."CHANNEL_VIEW_COUNT", ch."CHANNEL_VIDEO_COUNT", ch."CHANNEL_THUMBNAIL_URL"
+  );
+  
+[0m13:46:47.596539 [debug] [Thread-4 (]: Postgres adapter: Postgres error: column "CHANNEL_ID" does not exist
+LINE 17:     "CHANNEL_ID",
+             ^
+
+[0m13:46:47.596539 [debug] [Thread-4 (]: On model.dbt_youtube.g_channel_overview: ROLLBACK
+[0m13:46:47.598542 [debug] [Thread-4 (]: On model.dbt_youtube.g_channel_overview: Close
+[0m13:46:47.600920 [debug] [Thread-4 (]: Database Error in model g_channel_overview (models\gold\g_channel_overview.sql)
+  column "CHANNEL_ID" does not exist
+  LINE 17:     "CHANNEL_ID",
+               ^
+  compiled code at target\run\dbt_youtube\models\gold\g_channel_overview.sql
+[0m13:46:47.601920 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC9BAB430>]}
+[0m13:46:47.602331 [error] [Thread-4 (]: 8 of 13 ERROR creating sql table model public.g_channel_overview ............... [[31mERROR[0m in 0.07s]
+[0m13:46:47.603158 [debug] [Thread-4 (]: Finished running node model.dbt_youtube.g_channel_overview
+[0m13:46:47.604199 [debug] [Thread-4 (]: Began running node model.dbt_youtube.g_upload_heatmap
+[0m13:46:47.604199 [debug] [Thread-7 (]: Marking all children of 'model.dbt_youtube.g_channel_overview' to be skipped because of status 'error'.  Reason: Database Error in model g_channel_overview (models\gold\g_channel_overview.sql)
+  column "CHANNEL_ID" does not exist
+  LINE 17:     "CHANNEL_ID",
+               ^
+  compiled code at target\run\dbt_youtube\models\gold\g_channel_overview.sql.
+[0m13:46:47.605199 [info ] [Thread-4 (]: 12 of 13 START sql table model public.g_upload_heatmap ......................... [RUN]
+[0m13:46:47.606666 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.g_channel_overview, now model.dbt_youtube.g_upload_heatmap)
+[0m13:46:47.607673 [debug] [Thread-4 (]: Began compiling node model.dbt_youtube.g_upload_heatmap
+[0m13:46:47.610012 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_youtube.g_upload_heatmap"
+[0m13:46:47.610012 [debug] [Thread-4 (]: Began executing node model.dbt_youtube.g_upload_heatmap
+[0m13:46:47.614542 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_youtube.g_upload_heatmap"
+[0m13:46:47.615521 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_upload_heatmap"
+[0m13:46:47.616747 [debug] [Thread-2 (]: SQL status: BEGIN in 0.032 seconds
+[0m13:46:47.616747 [debug] [Thread-1 (]: SQL status: BEGIN in 0.031 seconds
+[0m13:46:47.616747 [debug] [Thread-3 (]: SQL status: BEGIN in 0.037 seconds
+[0m13:46:47.617746 [debug] [Thread-4 (]: On model.dbt_youtube.g_upload_heatmap: BEGIN
+[0m13:46:47.617746 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_playlist_performance"
+[0m13:46:47.618748 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.g_duration_distribution"
+[0m13:46:47.618748 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_content_mix"
+[0m13:46:47.620135 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m13:46:47.620135 [debug] [Thread-2 (]: On model.dbt_youtube.g_playlist_performance: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_playlist_performance"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_playlist_performance__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with pi as (
+  select
+    playlist_id
+    , count(distinct video_id) as items_detected
+  from "youtube_raw_db"."public"."stg_videos"
+  group by playlist_id
+),
+best as (
+  select
+    v.playlist_id
+    , v.video_id
+    , any_value(v.video_title) as "VIDEO_TITLE"
+    , any_value(v.view_count)  as "VIEW_COUNT"
+    , row_number() over (partition by v.playlist_id order by any_value(v.view_count) desc) as rn
+  from "youtube_raw_db"."public"."stg_videos" v
+  group by v.playlist_id, v.video_id
+)
+select
+  p.playlist_id
+  , p.playlist_title               as "PLAYLIST_TITLE"
+  , p."ITEM_COUNT"                 as item_count_declared
+  , pi.items_detected
+  , p.channel_id
+  , p.channel_title                as "CHANNEL_TITLE"
+  , p."PLAYLIST_THUMBNAIL_URL"     as playlist_thumbnail_url
+  , b.video_id                     as top_video_id
+  , b."VIDEO_TITLE"                as top_video_title
+  , b."VIEW_COUNT"                 as top_video_views
+from "youtube_raw_db"."public"."stg_playlists" p
+left join pi   on pi.playlist_id = p.playlist_id
+left join best b on b.playlist_id = p.playlist_id and b.rn = 1
+  );
+  
+[0m13:46:47.621105 [debug] [Thread-1 (]: On model.dbt_youtube.g_duration_distribution: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_duration_distribution"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_duration_distribution__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with v as (
+  select
+    video_id
+    -- SỬA LỖI: Dùng MIN (Postgres) và cột CHỮ HOA
+    , MIN("DURATION_SECONDS") as "DURATION_SECONDS"
+    , MIN(case
+        -- SỬA LỖI: Dùng cột CHỮ HOA
+        when "DURATION_SECONDS" <   60 then '0-1m'
+        when "DURATION_SECONDS" <  300 then '1-5m'
+        when "DURATION_SECONDS" <  900 then '5-15m'
+        when "DURATION_SECONDS" < 1800 then '15-30m'
+        when "DURATION_SECONDS" < 3600 then '30-60m'
+        else '60m+'
+      end) as "DURATION_BUCKET"
+  from "youtube_raw_db"."public"."stg_videos"
+  group by video_id
+)
+select
+  "DURATION_BUCKET" as duration_bucket
+  , count(*)        as videos_count
+  , avg("DURATION_SECONDS") as avg_duration_sec
+from v
+group by 1
+order by
+  case duration_bucket
+    when '0-1m'   then 1
+    when '1-5m'   then 2
+    when '5-15m'  then 3
+    when '15-30m' then 4
+    when '30-60m' then 5
+    else 6
+  end
+  );
+  
+[0m13:46:47.621757 [debug] [Thread-3 (]: On model.dbt_youtube.g_content_mix: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_content_mix"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_content_mix__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with v as (
+  select
+    video_id
+    -- SỬA LỖI: Dùng MIN (Postgres) và cột CHỮ HOA
+    , MIN("VIEW_COUNT")    as "VIEW_COUNT"
+    , MIN("LIKE_COUNT")    as "LIKE_COUNT"
+    , MIN("COMMENT_COUNT") as "COMMENT_COUNT"
+    , MIN("VIDEO_TYPE")    as "VIDEO_TYPE"
+  from "youtube_raw_db"."public"."stg_videos"
+  group by video_id
+)
+select
+  "VIDEO_TYPE" as video_type
+  , count(*)   as videos_count
+  , sum("VIEW_COUNT") as total_views
+  , avg("LIKE_COUNT"   / nullif("VIEW_COUNT",0))     as avg_like_per_view
+  , avg("COMMENT_COUNT"/ nullif("VIEW_COUNT",0))     as avg_comment_per_view
+from v
+group by 1
+order by videos_count desc
+  );
+  
+[0m13:46:47.624769 [debug] [Thread-2 (]: Postgres adapter: Postgres error: function any_value(text) does not exist
+LINE 25:     , any_value(v.video_title) as "VIDEO_TITLE"
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m13:46:47.626002 [debug] [Thread-2 (]: On model.dbt_youtube.g_playlist_performance: ROLLBACK
+[0m13:46:47.627247 [debug] [Thread-2 (]: On model.dbt_youtube.g_playlist_performance: Close
+[0m13:46:47.628654 [debug] [Thread-1 (]: Postgres adapter: Postgres error: column "duration_bucket" does not exist
+LINE 38:   case duration_bucket
+                ^
+
+[0m13:46:47.628654 [debug] [Thread-1 (]: On model.dbt_youtube.g_duration_distribution: ROLLBACK
+[0m13:46:47.630040 [debug] [Thread-2 (]: Database Error in model g_playlist_performance (models\gold\g_playlist_performance.sql)
+  function any_value(text) does not exist
+  LINE 25:     , any_value(v.video_title) as "VIDEO_TITLE"
+                 ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled code at target\run\dbt_youtube\models\gold\g_playlist_performance.sql
+[0m13:46:47.630040 [debug] [Thread-1 (]: On model.dbt_youtube.g_duration_distribution: Close
+[0m13:46:47.631545 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCB9D71C0>]}
+[0m13:46:47.632584 [error] [Thread-2 (]: 11 of 13 ERROR creating sql table model public.g_playlist_performance .......... [[31mERROR[0m in 0.10s]
+[0m13:46:47.634554 [debug] [Thread-2 (]: Finished running node model.dbt_youtube.g_playlist_performance
+[0m13:46:47.634554 [debug] [Thread-2 (]: Began running node model.dbt_youtube.g_video_rankings
+[0m13:46:47.635551 [debug] [Thread-1 (]: Database Error in model g_duration_distribution (models\gold\g_duration_distribution.sql)
+  column "duration_bucket" does not exist
+  LINE 38:   case duration_bucket
+                  ^
+  compiled code at target\run\dbt_youtube\models\gold\g_duration_distribution.sql
+[0m13:46:47.635551 [debug] [Thread-7 (]: Marking all children of 'model.dbt_youtube.g_playlist_performance' to be skipped because of status 'error'.  Reason: Database Error in model g_playlist_performance (models\gold\g_playlist_performance.sql)
+  function any_value(text) does not exist
+  LINE 25:     , any_value(v.video_title) as "VIDEO_TITLE"
+                 ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled code at target\run\dbt_youtube\models\gold\g_playlist_performance.sql.
+[0m13:46:47.636627 [info ] [Thread-2 (]: 13 of 13 START sql table model public.g_video_rankings ......................... [RUN]
+[0m13:46:47.637634 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCB981AE0>]}
+[0m13:46:47.638632 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.g_playlist_performance, now model.dbt_youtube.g_video_rankings)
+[0m13:46:47.639620 [error] [Thread-1 (]: 10 of 13 ERROR creating sql table model public.g_duration_distribution ......... [[31mERROR[0m in 0.11s]
+[0m13:46:47.639944 [debug] [Thread-2 (]: Began compiling node model.dbt_youtube.g_video_rankings
+[0m13:46:47.641532 [debug] [Thread-1 (]: Finished running node model.dbt_youtube.g_duration_distribution
+[0m13:46:47.644534 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_youtube.g_video_rankings"
+[0m13:46:47.646375 [debug] [Thread-7 (]: Marking all children of 'model.dbt_youtube.g_duration_distribution' to be skipped because of status 'error'.  Reason: Database Error in model g_duration_distribution (models\gold\g_duration_distribution.sql)
+  column "duration_bucket" does not exist
+  LINE 38:   case duration_bucket
+                  ^
+  compiled code at target\run\dbt_youtube\models\gold\g_duration_distribution.sql.
+[0m13:46:47.647896 [debug] [Thread-2 (]: Began executing node model.dbt_youtube.g_video_rankings
+[0m13:46:47.651421 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_youtube.g_video_rankings"
+[0m13:46:47.652437 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_video_rankings"
+[0m13:46:47.652437 [debug] [Thread-2 (]: On model.dbt_youtube.g_video_rankings: BEGIN
+[0m13:46:47.653436 [debug] [Thread-4 (]: SQL status: BEGIN in 0.033 seconds
+[0m13:46:47.653436 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:46:47.654437 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_upload_heatmap"
+[0m13:46:47.654437 [debug] [Thread-4 (]: On model.dbt_youtube.g_upload_heatmap: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_upload_heatmap"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_upload_heatmap__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with v as (
+  select
+    video_id
+    -- SỬA LỖI 1 & 2: Dùng MIN (Postgres) VÀ cột CHỮ HOA
+    , MIN("VIDEO_PUBLISHED_AT") as "VIDEO_PUBLISHED_AT"
+  from "youtube_raw_db"."public"."stg_videos"
+  -- SỬA LỖI 2: Dùng cột CHỮ HOA
+  where "VIDEO_PUBLISHED_AT" is not null
+  group by video_id
+)
+select
+  extract(dow  from "VIDEO_PUBLISHED_AT") as published_dow   -- 0=Sun
+  , extract(hour from "VIDEO_PUBLISHED_AT") as published_hour -- 0..23
+  , count(*) as videos_count
+from v
+group by 1,2
+  );
+  
+[0m13:46:47.683586 [debug] [Thread-2 (]: SQL status: BEGIN in 0.030 seconds
+[0m13:46:47.684590 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_video_rankings"
+[0m13:46:47.685592 [debug] [Thread-2 (]: On model.dbt_youtube.g_video_rankings: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_video_rankings"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_video_rankings__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with v as (
+  select
+    video_id
+    -- SỬA LỖI 1: Dùng MIN (Postgres) thay vì any_value (Snowflake)
+    -- SỬA LỖI 2: Dùng tên cột CHỮ HOA (input từ stg_videos)
+    , MIN(video_title)           as "VIDEO_TITLE"
+    , MIN(video_desc)            as "VIDEO_DESC"
+    , MIN("VIDEO_PUBLISHED_AT")  as "VIDEO_PUBLISHED_AT"
+    , MIN("DURATION_SECONDS")    as "DURATION_SECONDS"
+    , MIN("VIEW_COUNT")          as "VIEW_COUNT"
+    , MIN("LIKE_COUNT")          as "LIKE_COUNT"
+    , MIN("COMMENT_COUNT")       as "COMMENT_COUNT"
+  from "youtube_raw_db"."public"."stg_videos"
+  where video_title is not null
+  group by video_id
+)
+select
+  v.video_id
+  , v."VIDEO_TITLE"
+  , v."VIDEO_DESC"
+  , v."VIDEO_PUBLISHED_AT"::date as published_date
+  , v."DURATION_SECONDS"
+  , v."VIEW_COUNT"
+  , v."LIKE_COUNT"
+  , v."COMMENT_COUNT"
+  , v."LIKE_COUNT"   / nullif(v."VIEW_COUNT", 0) as like_per_view
+  , v."COMMENT_COUNT"/ nullif(v."VIEW_COUNT", 0) as comment_per_view
+  , row_number() over (order by v."VIEW_COUNT" desc)                       as rn_by_views
+  , row_number() over (order by v."LIKE_COUNT"/nullif(v."VIEW_COUNT",0) desc)     as rn_by_like_rate
+  , row_number() over (order by v."COMMENT_COUNT"/nullif(v."VIEW_COUNT",0) desc) as rn_by_comment_rate
+  , row_number() over (order by v."VIDEO_PUBLISHED_AT" desc)                as rn_newest
+from v
+  );
+  
+[0m13:46:47.776921 [debug] [Thread-4 (]: SQL status: SELECT 128 in 0.123 seconds
+[0m13:46:47.783611 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_upload_heatmap"
+[0m13:46:47.784834 [debug] [Thread-4 (]: On model.dbt_youtube.g_upload_heatmap: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_upload_heatmap"} */
+alter table "youtube_raw_db"."public"."g_upload_heatmap__dbt_tmp" rename to "g_upload_heatmap"
+[0m13:46:47.784834 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:46:47.788221 [debug] [Thread-4 (]: On model.dbt_youtube.g_upload_heatmap: COMMIT
+[0m13:46:47.789221 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_upload_heatmap"
+[0m13:46:47.789221 [debug] [Thread-4 (]: On model.dbt_youtube.g_upload_heatmap: COMMIT
+[0m13:46:47.791808 [debug] [Thread-4 (]: SQL status: COMMIT in 0.001 seconds
+[0m13:46:47.793478 [debug] [Thread-4 (]: Applying DROP to: "youtube_raw_db"."public"."g_upload_heatmap__dbt_backup"
+[0m13:46:47.797000 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_upload_heatmap"
+[0m13:46:47.798000 [debug] [Thread-4 (]: On model.dbt_youtube.g_upload_heatmap: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_upload_heatmap"} */
+drop table if exists "youtube_raw_db"."public"."g_upload_heatmap__dbt_backup" cascade
+[0m13:46:47.799000 [debug] [Thread-4 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m13:46:47.800000 [debug] [Thread-4 (]: On model.dbt_youtube.g_upload_heatmap: Close
+[0m13:46:47.800000 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC9BAB430>]}
+[0m13:46:47.801507 [info ] [Thread-4 (]: 12 of 13 OK created sql table model public.g_upload_heatmap .................... [[32mSELECT 128[0m in 0.19s]
+[0m13:46:47.802514 [debug] [Thread-4 (]: Finished running node model.dbt_youtube.g_upload_heatmap
+[0m13:46:47.964768 [debug] [Thread-3 (]: SQL status: SELECT 4 in 0.342 seconds
+[0m13:46:47.968056 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_content_mix"
+[0m13:46:47.969054 [debug] [Thread-3 (]: On model.dbt_youtube.g_content_mix: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_content_mix"} */
+alter table "youtube_raw_db"."public"."g_content_mix__dbt_tmp" rename to "g_content_mix"
+[0m13:46:47.971056 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:46:47.972706 [debug] [Thread-3 (]: On model.dbt_youtube.g_content_mix: COMMIT
+[0m13:46:47.972706 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_content_mix"
+[0m13:46:47.973720 [debug] [Thread-3 (]: On model.dbt_youtube.g_content_mix: COMMIT
+[0m13:46:47.977512 [debug] [Thread-3 (]: SQL status: COMMIT in 0.004 seconds
+[0m13:46:47.979533 [debug] [Thread-3 (]: Applying DROP to: "youtube_raw_db"."public"."g_content_mix__dbt_backup"
+[0m13:46:47.980534 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_content_mix"
+[0m13:46:47.981519 [debug] [Thread-3 (]: On model.dbt_youtube.g_content_mix: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_content_mix"} */
+drop table if exists "youtube_raw_db"."public"."g_content_mix__dbt_backup" cascade
+[0m13:46:47.982024 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m13:46:47.984235 [debug] [Thread-3 (]: On model.dbt_youtube.g_content_mix: Close
+[0m13:46:47.984235 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCBA66EC0>]}
+[0m13:46:47.985341 [info ] [Thread-3 (]: 9 of 13 OK created sql table model public.g_content_mix ........................ [[32mSELECT 4[0m in 0.45s]
+[0m13:46:47.986340 [debug] [Thread-3 (]: Finished running node model.dbt_youtube.g_content_mix
+[0m13:46:48.161106 [debug] [Thread-2 (]: SQL status: SELECT 11294 in 0.475 seconds
+[0m13:46:48.166168 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_video_rankings"
+[0m13:46:48.166168 [debug] [Thread-2 (]: On model.dbt_youtube.g_video_rankings: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_video_rankings"} */
+alter table "youtube_raw_db"."public"."g_video_rankings__dbt_tmp" rename to "g_video_rankings"
+[0m13:46:48.168369 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:46:48.169411 [debug] [Thread-2 (]: On model.dbt_youtube.g_video_rankings: COMMIT
+[0m13:46:48.170163 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_video_rankings"
+[0m13:46:48.170725 [debug] [Thread-2 (]: On model.dbt_youtube.g_video_rankings: COMMIT
+[0m13:46:48.181382 [debug] [Thread-2 (]: SQL status: COMMIT in 0.011 seconds
+[0m13:46:48.183396 [debug] [Thread-2 (]: Applying DROP to: "youtube_raw_db"."public"."g_video_rankings__dbt_backup"
+[0m13:46:48.184596 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_video_rankings"
+[0m13:46:48.185582 [debug] [Thread-2 (]: On model.dbt_youtube.g_video_rankings: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_video_rankings"} */
+drop table if exists "youtube_raw_db"."public"."g_video_rankings__dbt_backup" cascade
+[0m13:46:48.186568 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m13:46:48.188094 [debug] [Thread-2 (]: On model.dbt_youtube.g_video_rankings: Close
+[0m13:46:48.188094 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1696b3db-25d1-4dc1-b22e-5bff7b7c61ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCB9F2770>]}
+[0m13:46:48.189110 [info ] [Thread-2 (]: 13 of 13 OK created sql table model public.g_video_rankings .................... [[32mSELECT 11294[0m in 0.55s]
+[0m13:46:48.190134 [debug] [Thread-2 (]: Finished running node model.dbt_youtube.g_video_rankings
+[0m13:46:48.191996 [debug] [MainThread]: Using postgres connection "master"
+[0m13:46:48.191996 [debug] [MainThread]: On master: BEGIN
+[0m13:46:48.192768 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:46:48.221479 [debug] [MainThread]: SQL status: BEGIN in 0.028 seconds
+[0m13:46:48.221479 [debug] [MainThread]: On master: COMMIT
+[0m13:46:48.222487 [debug] [MainThread]: Using postgres connection "master"
+[0m13:46:48.222487 [debug] [MainThread]: On master: COMMIT
+[0m13:46:48.223638 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m13:46:48.223638 [debug] [MainThread]: On master: Close
+[0m13:46:48.224643 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:46:48.224643 [debug] [MainThread]: Connection 'list_youtube_raw_db' was properly closed.
+[0m13:46:48.224643 [debug] [MainThread]: Connection 'list_youtube_raw_db_public' was properly closed.
+[0m13:46:48.224643 [debug] [MainThread]: Connection 'model.dbt_youtube.g_duration_distribution' was properly closed.
+[0m13:46:48.224643 [debug] [MainThread]: Connection 'model.dbt_youtube.g_video_rankings' was properly closed.
+[0m13:46:48.224643 [debug] [MainThread]: Connection 'model.dbt_youtube.g_content_mix' was properly closed.
+[0m13:46:48.224643 [debug] [MainThread]: Connection 'model.dbt_youtube.g_upload_heatmap' was properly closed.
+[0m13:46:48.224643 [info ] [MainThread]: 
+[0m13:46:48.224643 [info ] [MainThread]: Finished running 6 table models, 7 view models in 0 hours 0 minutes and 1.22 seconds (1.22s).
+[0m13:46:48.230629 [debug] [MainThread]: Command end result
+[0m13:46:48.255667 [debug] [MainThread]: Wrote artifact WritableManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\manifest.json
+[0m13:46:48.257927 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\semantic_manifest.json
+[0m13:46:48.264611 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\StudyZone\Project\mtp-data\dbt_youtube\target\run_results.json
+[0m13:46:48.264611 [info ] [MainThread]: 
+[0m13:46:48.265592 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:46:48.266669 [info ] [MainThread]: 
+[0m13:46:48.266669 [error] [MainThread]: [31mFailure in model g_channel_overview (models\gold\g_channel_overview.sql)[0m
+[0m13:46:48.267669 [error] [MainThread]:   Database Error in model g_channel_overview (models\gold\g_channel_overview.sql)
+  column "CHANNEL_ID" does not exist
+  LINE 17:     "CHANNEL_ID",
+               ^
+  compiled code at target\run\dbt_youtube\models\gold\g_channel_overview.sql
+[0m13:46:48.267669 [info ] [MainThread]: 
+[0m13:46:48.268668 [info ] [MainThread]:   compiled code at target\compiled\dbt_youtube\models\gold\g_channel_overview.sql
+[0m13:46:48.268668 [info ] [MainThread]: 
+[0m13:46:48.268668 [error] [MainThread]: [31mFailure in model g_playlist_performance (models\gold\g_playlist_performance.sql)[0m
+[0m13:46:48.269669 [error] [MainThread]:   Database Error in model g_playlist_performance (models\gold\g_playlist_performance.sql)
+  function any_value(text) does not exist
+  LINE 25:     , any_value(v.video_title) as "VIDEO_TITLE"
+                 ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled code at target\run\dbt_youtube\models\gold\g_playlist_performance.sql
+[0m13:46:48.269669 [info ] [MainThread]: 
+[0m13:46:48.270668 [info ] [MainThread]:   compiled code at target\compiled\dbt_youtube\models\gold\g_playlist_performance.sql
+[0m13:46:48.270668 [info ] [MainThread]: 
+[0m13:46:48.271670 [error] [MainThread]: [31mFailure in model g_duration_distribution (models\gold\g_duration_distribution.sql)[0m
+[0m13:46:48.271670 [error] [MainThread]:   Database Error in model g_duration_distribution (models\gold\g_duration_distribution.sql)
+  column "duration_bucket" does not exist
+  LINE 38:   case duration_bucket
+                  ^
+  compiled code at target\run\dbt_youtube\models\gold\g_duration_distribution.sql
+[0m13:46:48.273070 [info ] [MainThread]: 
+[0m13:46:48.273070 [info ] [MainThread]:   compiled code at target\compiled\dbt_youtube\models\gold\g_duration_distribution.sql
+[0m13:46:48.274076 [info ] [MainThread]: 
+[0m13:46:48.274076 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=3 SKIP=0 NO-OP=0 TOTAL=13
+[0m13:46:48.275076 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 7 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:46:48.276076 [debug] [MainThread]: Command `dbt run` failed at 13:46:48.276076 after 2.60 seconds
+[0m13:46:48.277077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC783CFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC718EE00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC8AE5120>]}
+[0m13:46:48.277077 [debug] [MainThread]: Flushing usage events
+[0m13:46:51.725660 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:49:05.121522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A030CF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A251D6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A251D390>]}
+
+
+============================== 13:49:05.125635 | baa02bc0-900c-4f69-86fb-6192b7c75117 ==============================
+[0m13:49:05.125635 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:49:05.126576 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\QUOC ANH\\.dbt', 'use_colors': 'True', 'target_path': 'None', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': 'C:\\StudyZone\\Project\\mtp-data\\dbt_youtube\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt run', 'printer_width': '80', 'write_json': 'True'}
+[0m13:49:05.297033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002129E8021D0>]}
+[0m13:49:05.345819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A22E6C80>]}
+[0m13:49:05.345819 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m13:49:05.577848 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:49:05.752239 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m13:49:05.753234 [debug] [MainThread]: Partial parsing: updated file: dbt_youtube://models\gold\g_playlist_performance.sql
+[0m13:49:05.753234 [debug] [MainThread]: Partial parsing: updated file: dbt_youtube://models\gold\g_duration_distribution.sql
+[0m13:49:05.754241 [debug] [MainThread]: Partial parsing: updated file: dbt_youtube://models\gold\g_channel_overview.sql
+[0m13:49:06.081805 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships`. Arguments to generic tests
+should be nested under the `arguments` property.`
+[0m13:49:06.082910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A2D30730>]}
+[0m13:49:06.196965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A2D17A60>]}
+[0m13:49:06.283315 [debug] [MainThread]: Wrote artifact WritableManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\manifest.json
+[0m13:49:06.286384 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\semantic_manifest.json
+[0m13:49:06.314472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A3E88490>]}
+[0m13:49:06.314472 [info ] [MainThread]: Found 13 models, 45 data tests, 4 sources, 447 macros
+[0m13:49:06.315492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A3E889D0>]}
+[0m13:49:06.317632 [info ] [MainThread]: 
+[0m13:49:06.317632 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:49:06.318648 [info ] [MainThread]: 
+[0m13:49:06.319652 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m13:49:06.323730 [debug] [ThreadPool]: Acquiring new postgres connection 'list_youtube_raw_db'
+[0m13:49:06.396932 [debug] [ThreadPool]: Using postgres connection "list_youtube_raw_db"
+[0m13:49:06.397934 [debug] [ThreadPool]: On list_youtube_raw_db: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "connection_name": "list_youtube_raw_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m13:49:06.397934 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:49:06.418301 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.020 seconds
+[0m13:49:06.419288 [debug] [ThreadPool]: On list_youtube_raw_db: Close
+[0m13:49:06.422453 [debug] [ThreadPool]: Acquiring new postgres connection 'list_youtube_raw_db_public'
+[0m13:49:06.426699 [debug] [ThreadPool]: Using postgres connection "list_youtube_raw_db_public"
+[0m13:49:06.427682 [debug] [ThreadPool]: On list_youtube_raw_db_public: BEGIN
+[0m13:49:06.428682 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:49:06.436891 [debug] [ThreadPool]: SQL status: BEGIN in 0.012 seconds
+[0m13:49:06.436891 [debug] [ThreadPool]: Using postgres connection "list_youtube_raw_db_public"
+[0m13:49:06.436891 [debug] [ThreadPool]: On list_youtube_raw_db_public: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "connection_name": "list_youtube_raw_db_public"} */
+select
+      'youtube_raw_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'youtube_raw_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'youtube_raw_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m13:49:06.446311 [debug] [ThreadPool]: SQL status: SELECT 14 in 0.005 seconds
+[0m13:49:06.448332 [debug] [ThreadPool]: On list_youtube_raw_db_public: ROLLBACK
+[0m13:49:06.449317 [debug] [ThreadPool]: On list_youtube_raw_db_public: Close
+[0m13:49:06.455115 [debug] [MainThread]: Using postgres connection "master"
+[0m13:49:06.456078 [debug] [MainThread]: On master: BEGIN
+[0m13:49:06.456078 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:49:06.467999 [debug] [MainThread]: SQL status: BEGIN in 0.012 seconds
+[0m13:49:06.468918 [debug] [MainThread]: Using postgres connection "master"
+[0m13:49:06.469690 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m13:49:06.474815 [debug] [MainThread]: SQL status: SELECT 9 in 0.005 seconds
+[0m13:49:06.476823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A2D842E0>]}
+[0m13:49:06.477813 [debug] [MainThread]: On master: ROLLBACK
+[0m13:49:06.478720 [debug] [MainThread]: Using postgres connection "master"
+[0m13:49:06.479331 [debug] [MainThread]: On master: BEGIN
+[0m13:49:06.480395 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m13:49:06.480395 [debug] [MainThread]: On master: COMMIT
+[0m13:49:06.480395 [debug] [MainThread]: Using postgres connection "master"
+[0m13:49:06.481997 [debug] [MainThread]: On master: COMMIT
+[0m13:49:06.482661 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m13:49:06.482661 [debug] [MainThread]: On master: Close
+[0m13:49:06.486506 [debug] [Thread-1 (]: Began running node model.dbt_youtube.br_channels
+[0m13:49:06.487620 [debug] [Thread-2 (]: Began running node model.dbt_youtube.br_playlist_items
+[0m13:49:06.487620 [debug] [Thread-3 (]: Began running node model.dbt_youtube.br_playlists
+[0m13:49:06.487620 [debug] [Thread-4 (]: Began running node model.dbt_youtube.br_video_stats
+[0m13:49:06.488577 [info ] [Thread-1 (]: 1 of 13 START sql view model public.br_channels ................................ [RUN]
+[0m13:49:06.489518 [info ] [Thread-2 (]: 2 of 13 START sql view model public.br_playlist_items .......................... [RUN]
+[0m13:49:06.489518 [info ] [Thread-3 (]: 3 of 13 START sql view model public.br_playlists ............................... [RUN]
+[0m13:49:06.490633 [info ] [Thread-4 (]: 4 of 13 START sql view model public.br_video_stats ............................. [RUN]
+[0m13:49:06.490633 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.dbt_youtube.br_channels'
+[0m13:49:06.491803 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.dbt_youtube.br_playlist_items'
+[0m13:49:06.491803 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.dbt_youtube.br_playlists'
+[0m13:49:06.492839 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.dbt_youtube.br_video_stats'
+[0m13:49:06.492839 [debug] [Thread-1 (]: Began compiling node model.dbt_youtube.br_channels
+[0m13:49:06.493837 [debug] [Thread-2 (]: Began compiling node model.dbt_youtube.br_playlist_items
+[0m13:49:06.494376 [debug] [Thread-3 (]: Began compiling node model.dbt_youtube.br_playlists
+[0m13:49:06.496960 [debug] [Thread-4 (]: Began compiling node model.dbt_youtube.br_video_stats
+[0m13:49:06.502980 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_youtube.br_channels"
+[0m13:49:06.506780 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_youtube.br_playlist_items"
+[0m13:49:06.509170 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_youtube.br_playlists"
+[0m13:49:06.512402 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_youtube.br_video_stats"
+[0m13:49:06.513757 [debug] [Thread-1 (]: Began executing node model.dbt_youtube.br_channels
+[0m13:49:06.514979 [debug] [Thread-2 (]: Began executing node model.dbt_youtube.br_playlist_items
+[0m13:49:06.515978 [debug] [Thread-3 (]: Began executing node model.dbt_youtube.br_playlists
+[0m13:49:06.543408 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_youtube.br_channels"
+[0m13:49:06.546386 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_youtube.br_playlist_items"
+[0m13:49:06.547403 [debug] [Thread-4 (]: Began executing node model.dbt_youtube.br_video_stats
+[0m13:49:06.550407 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_youtube.br_playlists"
+[0m13:49:06.553953 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_youtube.br_video_stats"
+[0m13:49:06.554939 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:49:06.555918 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:49:06.556528 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:49:06.557537 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: BEGIN
+[0m13:49:06.557537 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:49:06.557537 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: BEGIN
+[0m13:49:06.558739 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: BEGIN
+[0m13:49:06.558739 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:49:06.558739 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: BEGIN
+[0m13:49:06.560136 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:49:06.560136 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:49:06.560136 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:49:06.599866 [debug] [Thread-4 (]: SQL status: BEGIN in 0.039 seconds
+[0m13:49:06.599866 [debug] [Thread-1 (]: SQL status: BEGIN in 0.040 seconds
+[0m13:49:06.601224 [debug] [Thread-3 (]: SQL status: BEGIN in 0.040 seconds
+[0m13:49:06.601224 [debug] [Thread-2 (]: SQL status: BEGIN in 0.042 seconds
+[0m13:49:06.601727 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:49:06.601727 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:49:06.602732 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:49:06.603440 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:49:06.603440 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_video_stats"} */
+
+  create view "youtube_raw_db"."public"."br_video_stats__dbt_tmp"
+    
+    
+  as (
+    
+
+
+with base as (
+  select
+    video_id
+    , video_title
+    , video_desc
+    
+    -- SỬA LỖI 1: dùng CAST chuẩn của SQL/Postgres thay vì hàm try_to_timestamp_ntz của Snowflake
+    , CAST(video_published_at AS timestamp) as "VIDEO_PUBLISHED_AT"
+    , duration_iso8601
+
+    -- SỬA LỖI 2: dùng CAST chuẩn của SQL/Postgres thay vì hàm try_to_number của Snowflake
+    , CAST(view_count AS numeric) as "VIEW_COUNT"
+    , CAST(like_count AS numeric) as "LIKE_COUNT"
+    , CAST(comment_count AS numeric) as "COMMENT_COUNT"
+
+    , CAST(live_actual_start AS timestamp) as "LIVE_ACTUAL_START"
+    , CAST(live_actual_end AS timestamp)   as "LIVE_ACTUAL_END"
+    , CAST(live_scheduled_start AS timestamp) as "LIVE_SCHEDULED_START"
+  FROM "youtube_raw_db"."public"."raw_video_stats"
+),
+
+parsed as (
+  select
+    *,
+    
+    -- SỬA LỖI 3: dùng hàm substring(... FROM ...) của Postgres thay vì regexp_substr của Snowflake
+    -- và dùng CAST thay vì to_number
+      coalesce(CAST(substring(duration_iso8601 FROM '(\d+)H') AS numeric), 0) * 3600
+    + coalesce(CAST(substring(duration_iso8601 FROM '(\d+)M') AS numeric), 0) * 60
+    + coalesce(CAST(substring(duration_iso8601 FROM '(\d+)S') AS numeric), 0)
+      as "DURATION_SECONDS"
+      
+  from base
+)
+
+select * from parsed
+  );
+[0m13:49:06.604452 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_channels"} */
+
+  create view "youtube_raw_db"."public"."br_channels__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+  channel_id,
+  title,
+  "customUrl",
+  "publishedAt"::timestamp as "PUBLISHED_AT",
+  country,
+  "subscriberCount"::bigint as "SUBSCRIBER_COUNT", -- SỬA LỖI Ở ĐÂY
+  "viewCount"::bigint as "VIEW_COUNT",         -- Sửa luôn ở đây
+  "videoCount"::bigint as "VIDEO_COUNT" ,        -- Sửa luôn ở đây
+  thumbnail_high AS "CHANNEL_THUMBNAIL_URL"
+FROM "youtube_raw_db"."public"."raw_channels"
+  );
+[0m13:49:06.604934 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlists"} */
+
+  create view "youtube_raw_db"."public"."br_playlists__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    playlist_id,
+    playlist_title,
+    playlist_desc,
+    published_at::timestamp AS "PUBLISHED_AT",
+    channel_id,
+    thumb_high AS "PLAYLIST_THUMBNAIL_URL",
+    item_count::bigint AS "ITEM_COUNT"
+FROM "youtube_raw_db"."public"."raw_playlists"
+  );
+[0m13:49:06.604934 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlist_items"} */
+
+  create view "youtube_raw_db"."public"."br_playlist_items__dbt_tmp"
+    
+    
+  as (
+    
+
+
+select
+  "playlistItem_id" AS "PLAYLIST_ITEM_ID", 
+  playlist_id,
+  video_id,
+  video_title as "VIDEO_TITLE_IN_PLAYLIST",
+  video_desc as "VIDEO_DESC_IN_PLAYLIST",
+  
+  CAST(added_to_playlist_at AS timestamp) as "ADDED_TO_PLAYLIST_AT",
+  CAST(video_published_at AS timestamp) as "VIDEO_PUBLISHED_AT",
+  CAST(position_in_playlist AS numeric) as "POSITION_IN_PLAYLIST",
+  
+  snippet__thumbnails__maxres__url AS "VIDEO_THUMBNAIL_URL_IN_PLAYLIST",
+  channel_id
+  
+FROM "youtube_raw_db"."public"."raw_playlist_items"
+  );
+[0m13:49:06.608113 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.002 seconds
+[0m13:49:06.609111 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.003 seconds
+[0m13:49:06.610111 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.004 seconds
+[0m13:49:06.610111 [debug] [Thread-4 (]: SQL status: CREATE VIEW in 0.004 seconds
+[0m13:49:06.616081 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:49:06.619187 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:49:06.621690 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:49:06.625089 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:49:06.625089 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_channels"} */
+alter table "youtube_raw_db"."public"."br_channels" rename to "br_channels__dbt_backup"
+[0m13:49:06.626320 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlist_items"} */
+alter table "youtube_raw_db"."public"."br_playlist_items" rename to "br_playlist_items__dbt_backup"
+[0m13:49:06.626320 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlists"} */
+alter table "youtube_raw_db"."public"."br_playlists" rename to "br_playlists__dbt_backup"
+[0m13:49:06.627319 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_video_stats"} */
+alter table "youtube_raw_db"."public"."br_video_stats" rename to "br_video_stats__dbt_backup"
+[0m13:49:06.629277 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:49:06.629277 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:49:06.630282 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:49:06.630282 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m13:49:06.632985 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:49:06.636055 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:49:06.638057 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:49:06.640080 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:49:06.641756 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlists"} */
+alter table "youtube_raw_db"."public"."br_playlists__dbt_tmp" rename to "br_playlists"
+[0m13:49:06.642240 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlist_items"} */
+alter table "youtube_raw_db"."public"."br_playlist_items__dbt_tmp" rename to "br_playlist_items"
+[0m13:49:06.642240 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_video_stats"} */
+alter table "youtube_raw_db"."public"."br_video_stats__dbt_tmp" rename to "br_video_stats"
+[0m13:49:06.643277 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_channels"} */
+alter table "youtube_raw_db"."public"."br_channels__dbt_tmp" rename to "br_channels"
+[0m13:49:06.644667 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:49:06.645965 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:49:06.645965 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:49:06.646734 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:49:06.658939 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: COMMIT
+[0m13:49:06.660941 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: COMMIT
+[0m13:49:06.661939 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: COMMIT
+[0m13:49:06.662970 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: COMMIT
+[0m13:49:06.663986 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:49:06.663986 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:49:06.664972 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:49:06.664972 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:49:06.665972 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: COMMIT
+[0m13:49:06.665972 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: COMMIT
+[0m13:49:06.667000 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: COMMIT
+[0m13:49:06.667000 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: COMMIT
+[0m13:49:06.670436 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m13:49:06.670436 [debug] [Thread-3 (]: SQL status: COMMIT in 0.003 seconds
+[0m13:49:06.671942 [debug] [Thread-2 (]: SQL status: COMMIT in 0.004 seconds
+[0m13:49:06.671942 [debug] [Thread-4 (]: SQL status: COMMIT in 0.004 seconds
+[0m13:49:06.677959 [debug] [Thread-1 (]: Applying DROP to: "youtube_raw_db"."public"."br_channels__dbt_backup"
+[0m13:49:06.680089 [debug] [Thread-3 (]: Applying DROP to: "youtube_raw_db"."public"."br_playlists__dbt_backup"
+[0m13:49:06.682639 [debug] [Thread-2 (]: Applying DROP to: "youtube_raw_db"."public"."br_playlist_items__dbt_backup"
+[0m13:49:06.737927 [debug] [Thread-4 (]: Applying DROP to: "youtube_raw_db"."public"."br_video_stats__dbt_backup"
+[0m13:49:06.742983 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.br_channels"
+[0m13:49:06.743650 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.br_playlists"
+[0m13:49:06.744705 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.br_playlist_items"
+[0m13:49:06.745527 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.br_video_stats"
+[0m13:49:06.746539 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_channels"} */
+drop view if exists "youtube_raw_db"."public"."br_channels__dbt_backup" cascade
+[0m13:49:06.746539 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlists"} */
+drop view if exists "youtube_raw_db"."public"."br_playlists__dbt_backup" cascade
+[0m13:49:06.746539 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_playlist_items"} */
+drop view if exists "youtube_raw_db"."public"."br_playlist_items__dbt_backup" cascade
+[0m13:49:06.747536 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.br_video_stats"} */
+drop view if exists "youtube_raw_db"."public"."br_video_stats__dbt_backup" cascade
+[0m13:49:06.753554 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.006 seconds
+[0m13:49:06.754557 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.006 seconds
+[0m13:49:06.757038 [debug] [Thread-1 (]: On model.dbt_youtube.br_channels: Close
+[0m13:49:06.758208 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.010 seconds
+[0m13:49:06.758208 [debug] [Thread-4 (]: SQL status: DROP VIEW in 0.010 seconds
+[0m13:49:06.759186 [debug] [Thread-2 (]: On model.dbt_youtube.br_playlist_items: Close
+[0m13:49:06.762849 [debug] [Thread-3 (]: On model.dbt_youtube.br_playlists: Close
+[0m13:49:06.763848 [debug] [Thread-4 (]: On model.dbt_youtube.br_video_stats: Close
+[0m13:49:06.764848 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A014B7C0>]}
+[0m13:49:06.765848 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A2D842E0>]}
+[0m13:49:06.766645 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A451A9B0>]}
+[0m13:49:06.767150 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A451A740>]}
+[0m13:49:06.768154 [info ] [Thread-1 (]: 1 of 13 OK created sql view model public.br_channels ........................... [[32mCREATE VIEW[0m in 0.27s]
+[0m13:49:06.769158 [info ] [Thread-2 (]: 2 of 13 OK created sql view model public.br_playlist_items ..................... [[32mCREATE VIEW[0m in 0.27s]
+[0m13:49:06.770157 [info ] [Thread-3 (]: 3 of 13 OK created sql view model public.br_playlists .......................... [[32mCREATE VIEW[0m in 0.27s]
+[0m13:49:06.770157 [info ] [Thread-4 (]: 4 of 13 OK created sql view model public.br_video_stats ........................ [[32mCREATE VIEW[0m in 0.27s]
+[0m13:49:06.771891 [debug] [Thread-1 (]: Finished running node model.dbt_youtube.br_channels
+[0m13:49:06.771891 [debug] [Thread-2 (]: Finished running node model.dbt_youtube.br_playlist_items
+[0m13:49:06.772897 [debug] [Thread-3 (]: Finished running node model.dbt_youtube.br_playlists
+[0m13:49:06.772897 [debug] [Thread-4 (]: Finished running node model.dbt_youtube.br_video_stats
+[0m13:49:06.774044 [debug] [Thread-1 (]: Began running node model.dbt_youtube.stg_channels
+[0m13:49:06.775232 [debug] [Thread-2 (]: Began running node model.dbt_youtube.stg_playlists
+[0m13:49:06.776524 [debug] [Thread-3 (]: Began running node model.dbt_youtube.stg_videos
+[0m13:49:06.776524 [info ] [Thread-1 (]: 5 of 13 START sql view model public.stg_channels ............................... [RUN]
+[0m13:49:06.777529 [info ] [Thread-2 (]: 6 of 13 START sql view model public.stg_playlists .............................. [RUN]
+[0m13:49:06.777529 [info ] [Thread-3 (]: 7 of 13 START sql view model public.stg_videos ................................. [RUN]
+[0m13:49:06.779034 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.br_channels, now model.dbt_youtube.stg_channels)
+[0m13:49:06.779034 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.br_playlist_items, now model.dbt_youtube.stg_playlists)
+[0m13:49:06.780040 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.br_playlists, now model.dbt_youtube.stg_videos)
+[0m13:49:06.780040 [debug] [Thread-1 (]: Began compiling node model.dbt_youtube.stg_channels
+[0m13:49:06.780040 [debug] [Thread-2 (]: Began compiling node model.dbt_youtube.stg_playlists
+[0m13:49:06.780040 [debug] [Thread-3 (]: Began compiling node model.dbt_youtube.stg_videos
+[0m13:49:06.783633 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_youtube.stg_channels"
+[0m13:49:06.786635 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_youtube.stg_playlists"
+[0m13:49:06.790635 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_youtube.stg_videos"
+[0m13:49:06.792816 [debug] [Thread-1 (]: Began executing node model.dbt_youtube.stg_channels
+[0m13:49:06.793146 [debug] [Thread-2 (]: Began executing node model.dbt_youtube.stg_playlists
+[0m13:49:06.797213 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_youtube.stg_channels"
+[0m13:49:06.800229 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_youtube.stg_playlists"
+[0m13:49:06.800229 [debug] [Thread-3 (]: Began executing node model.dbt_youtube.stg_videos
+[0m13:49:06.803991 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_youtube.stg_videos"
+[0m13:49:06.805025 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.stg_channels"
+[0m13:49:06.805730 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.stg_playlists"
+[0m13:49:06.806737 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: BEGIN
+[0m13:49:06.806737 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.stg_videos"
+[0m13:49:06.807736 [debug] [Thread-2 (]: On model.dbt_youtube.stg_playlists: BEGIN
+[0m13:49:06.807736 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:49:06.807736 [debug] [Thread-3 (]: On model.dbt_youtube.stg_videos: BEGIN
+[0m13:49:06.808735 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:49:06.809737 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:49:06.821904 [debug] [Thread-3 (]: SQL status: BEGIN in 0.013 seconds
+[0m13:49:06.823074 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.stg_videos"
+[0m13:49:06.824050 [debug] [Thread-3 (]: On model.dbt_youtube.stg_videos: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_videos"} */
+
+  create view "youtube_raw_db"."public"."stg_videos__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+  -- SỬA LỖI: Các cột này đến từ 'br_playlist_items' (phải dùng CHỮ HOA)
+  pi."PLAYLIST_ITEM_ID",
+  pi.playlist_id,
+  pi.channel_id,
+  pi.video_id,
+
+  -- SỬA LỖI: Các cột này đến từ 'br_video_stats' (phải dùng CHỮ HOA hoặc chữ thường)
+  s.video_title,
+  s.video_desc,
+  s."VIDEO_PUBLISHED_AT" as "VIDEO_PUBLISHED_AT",
+  s."VIEW_COUNT" as "VIEW_COUNT",
+  s."LIKE_COUNT" as "LIKE_COUNT",
+  s."COMMENT_COUNT" as "COMMENT_COUNT",
+  s."DURATION_SECONDS" as "DURATION_SECONDS",
+  
+  -- Hàm này đã sửa đúng (dùng cột CHỮ HOA)
+  (current_timestamp::date - s."VIDEO_PUBLISHED_AT"::date) as "VIDEO_AGE_DAYS",
+  
+  CASE 
+        -- SỬA LỖI: Dùng cột CHỮ HOA
+        WHEN s."LIVE_SCHEDULED_START" is not null THEN 'Live'
+        WHEN s."DURATION_SECONDS" < 60 THEN 'Shorts'
+        WHEN s."DURATION_SECONDS" is null THEN 'Private videos'
+        ELSE 'Normal videos'
+    END AS "VIDEO_TYPE",
+  
+  CASE
+      -- SỬA LỖI: Dùng cột CHỮ HOA
+      WHEN s."DURATION_SECONDS" <   60 THEN '0-1m'
+      WHEN s."DURATION_SECONDS" <  300 THEN '1-5m'
+      WHEN s."DURATION_SECONDS" <  900 THEN '5-15m'
+      WHEN s."DURATION_SECONDS" < 1800 THEN '15-30m'
+      WHEN s."DURATION_SECONDS" < 3600 THEN '30-60m'
+      ELSE '60m+'
+    END AS "DURATION_BUCKET",
+
+  -- SỬA LỖI: Các cột này đến từ 'br_playlist_items' (phải dùng CHỮ HOA)
+  pi."ADDED_TO_PLAYLIST_AT" AS "VIDEO_ADDED_TO_PLAYLIST_AT",
+  pi."POSITION_IN_PLAYLIST" AS "VIDEO_POSITION_IN_PLAYLIST",
+  pi."VIDEO_THUMBNAIL_URL_IN_PLAYLIST" AS "VIDEO_THUMBNAIL_URL"
+
+from "youtube_raw_db"."public"."br_playlist_items" pi
+left join "youtube_raw_db"."public"."br_video_stats" s
+  -- Join key là chữ thường ở cả 2 file, nên giữ nguyên
+  on pi.video_id = s.video_id
+  );
+[0m13:49:06.828050 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.004 seconds
+[0m13:49:06.831583 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.stg_videos"
+[0m13:49:06.832604 [debug] [Thread-3 (]: On model.dbt_youtube.stg_videos: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_videos"} */
+alter table "youtube_raw_db"."public"."stg_videos__dbt_tmp" rename to "stg_videos"
+[0m13:49:06.833591 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:49:06.835587 [debug] [Thread-3 (]: On model.dbt_youtube.stg_videos: COMMIT
+[0m13:49:06.835587 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.stg_videos"
+[0m13:49:06.835587 [debug] [Thread-3 (]: On model.dbt_youtube.stg_videos: COMMIT
+[0m13:49:06.840586 [debug] [Thread-3 (]: SQL status: COMMIT in 0.004 seconds
+[0m13:49:06.842954 [debug] [Thread-3 (]: Applying DROP to: "youtube_raw_db"."public"."stg_videos__dbt_backup"
+[0m13:49:06.843930 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.stg_videos"
+[0m13:49:06.844789 [debug] [Thread-2 (]: SQL status: BEGIN in 0.036 seconds
+[0m13:49:06.844789 [debug] [Thread-1 (]: SQL status: BEGIN in 0.037 seconds
+[0m13:49:06.844789 [debug] [Thread-3 (]: On model.dbt_youtube.stg_videos: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_videos"} */
+drop view if exists "youtube_raw_db"."public"."stg_videos__dbt_backup" cascade
+[0m13:49:06.845912 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.stg_playlists"
+[0m13:49:06.845912 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.stg_channels"
+[0m13:49:06.846943 [debug] [Thread-2 (]: On model.dbt_youtube.stg_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_playlists"} */
+
+  create view "youtube_raw_db"."public"."stg_playlists__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+  p.*
+  , c.title as channel_title
+from "youtube_raw_db"."public"."br_playlists" p
+left join "youtube_raw_db"."public"."br_channels" c
+  on p.channel_id = c.channel_id
+  );
+[0m13:49:06.847918 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_channels"} */
+
+  create view "youtube_raw_db"."public"."stg_channels__dbt_tmp"
+    
+    
+  as (
+    
+
+
+select
+    * 
+from "youtube_raw_db"."public"."br_channels"
+  );
+[0m13:49:06.847918 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m13:49:06.849553 [debug] [Thread-3 (]: On model.dbt_youtube.stg_videos: Close
+[0m13:49:06.850555 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A2B6AE60>]}
+[0m13:49:06.850555 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.002 seconds
+[0m13:49:06.850555 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.003 seconds
+[0m13:49:06.852065 [info ] [Thread-3 (]: 7 of 13 OK created sql view model public.stg_videos ............................ [[32mCREATE VIEW[0m in 0.07s]
+[0m13:49:06.855086 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.stg_channels"
+[0m13:49:06.857071 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.stg_playlists"
+[0m13:49:06.858071 [debug] [Thread-3 (]: Finished running node model.dbt_youtube.stg_videos
+[0m13:49:06.858071 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_channels"} */
+alter table "youtube_raw_db"."public"."stg_channels__dbt_tmp" rename to "stg_channels"
+[0m13:49:06.859069 [debug] [Thread-2 (]: On model.dbt_youtube.stg_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_playlists"} */
+alter table "youtube_raw_db"."public"."stg_playlists__dbt_tmp" rename to "stg_playlists"
+[0m13:49:06.860071 [debug] [Thread-4 (]: Began running node model.dbt_youtube.g_content_mix
+[0m13:49:06.860071 [debug] [Thread-3 (]: Began running node model.dbt_youtube.g_duration_distribution
+[0m13:49:06.861578 [info ] [Thread-4 (]: 8 of 13 START sql table model public.g_content_mix ............................. [RUN]
+[0m13:49:06.861578 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:49:06.862585 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:49:06.862585 [info ] [Thread-3 (]: 9 of 13 START sql table model public.g_duration_distribution ................... [RUN]
+[0m13:49:06.863584 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.br_video_stats, now model.dbt_youtube.g_content_mix)
+[0m13:49:06.865383 [debug] [Thread-2 (]: On model.dbt_youtube.stg_playlists: COMMIT
+[0m13:49:06.867382 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: COMMIT
+[0m13:49:06.868804 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.stg_videos, now model.dbt_youtube.g_duration_distribution)
+[0m13:49:06.869807 [debug] [Thread-4 (]: Began compiling node model.dbt_youtube.g_content_mix
+[0m13:49:06.869807 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.stg_playlists"
+[0m13:49:06.870810 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.stg_channels"
+[0m13:49:06.870810 [debug] [Thread-3 (]: Began compiling node model.dbt_youtube.g_duration_distribution
+[0m13:49:06.873880 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_youtube.g_content_mix"
+[0m13:49:06.874858 [debug] [Thread-2 (]: On model.dbt_youtube.stg_playlists: COMMIT
+[0m13:49:06.874858 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: COMMIT
+[0m13:49:06.877876 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_youtube.g_duration_distribution"
+[0m13:49:06.878859 [debug] [Thread-4 (]: Began executing node model.dbt_youtube.g_content_mix
+[0m13:49:06.890320 [debug] [Thread-2 (]: SQL status: COMMIT in 0.012 seconds
+[0m13:49:06.891168 [debug] [Thread-1 (]: SQL status: COMMIT in 0.012 seconds
+[0m13:49:06.899716 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_youtube.g_content_mix"
+[0m13:49:06.902261 [debug] [Thread-2 (]: Applying DROP to: "youtube_raw_db"."public"."stg_playlists__dbt_backup"
+[0m13:49:06.902261 [debug] [Thread-3 (]: Began executing node model.dbt_youtube.g_duration_distribution
+[0m13:49:06.904787 [debug] [Thread-1 (]: Applying DROP to: "youtube_raw_db"."public"."stg_channels__dbt_backup"
+[0m13:49:06.906376 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_content_mix"
+[0m13:49:06.906376 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.stg_playlists"
+[0m13:49:06.909398 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_youtube.g_duration_distribution"
+[0m13:49:06.910397 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.stg_channels"
+[0m13:49:06.910397 [debug] [Thread-4 (]: On model.dbt_youtube.g_content_mix: BEGIN
+[0m13:49:06.911938 [debug] [Thread-2 (]: On model.dbt_youtube.stg_playlists: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_playlists"} */
+drop view if exists "youtube_raw_db"."public"."stg_playlists__dbt_backup" cascade
+[0m13:49:06.912947 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.stg_channels"} */
+drop view if exists "youtube_raw_db"."public"."stg_channels__dbt_backup" cascade
+[0m13:49:06.912947 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_duration_distribution"
+[0m13:49:06.912947 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m13:49:06.914451 [debug] [Thread-3 (]: On model.dbt_youtube.g_duration_distribution: BEGIN
+[0m13:49:06.914451 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m13:49:06.915456 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m13:49:06.915456 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:49:06.916634 [debug] [Thread-2 (]: On model.dbt_youtube.stg_playlists: Close
+[0m13:49:06.917635 [debug] [Thread-1 (]: On model.dbt_youtube.stg_channels: Close
+[0m13:49:06.918637 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A2C61540>]}
+[0m13:49:06.919953 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A23A1900>]}
+[0m13:49:06.921462 [info ] [Thread-2 (]: 6 of 13 OK created sql view model public.stg_playlists ......................... [[32mCREATE VIEW[0m in 0.14s]
+[0m13:49:06.922469 [info ] [Thread-1 (]: 5 of 13 OK created sql view model public.stg_channels .......................... [[32mCREATE VIEW[0m in 0.14s]
+[0m13:49:06.922469 [debug] [Thread-2 (]: Finished running node model.dbt_youtube.stg_playlists
+[0m13:49:06.923712 [debug] [Thread-1 (]: Finished running node model.dbt_youtube.stg_channels
+[0m13:49:06.924388 [debug] [Thread-2 (]: Began running node model.dbt_youtube.g_upload_heatmap
+[0m13:49:06.924900 [debug] [Thread-1 (]: Began running node model.dbt_youtube.g_video_rankings
+[0m13:49:06.925499 [info ] [Thread-2 (]: 10 of 13 START sql table model public.g_upload_heatmap ......................... [RUN]
+[0m13:49:06.925499 [info ] [Thread-1 (]: 11 of 13 START sql table model public.g_video_rankings ......................... [RUN]
+[0m13:49:06.927009 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.stg_playlists, now model.dbt_youtube.g_upload_heatmap)
+[0m13:49:06.927009 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.stg_channels, now model.dbt_youtube.g_video_rankings)
+[0m13:49:06.928017 [debug] [Thread-2 (]: Began compiling node model.dbt_youtube.g_upload_heatmap
+[0m13:49:06.928017 [debug] [Thread-1 (]: Began compiling node model.dbt_youtube.g_video_rankings
+[0m13:49:06.931517 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_youtube.g_upload_heatmap"
+[0m13:49:06.933692 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_youtube.g_video_rankings"
+[0m13:49:06.934811 [debug] [Thread-2 (]: Began executing node model.dbt_youtube.g_upload_heatmap
+[0m13:49:06.938803 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_youtube.g_upload_heatmap"
+[0m13:49:06.939818 [debug] [Thread-4 (]: SQL status: BEGIN in 0.026 seconds
+[0m13:49:06.939818 [debug] [Thread-1 (]: Began executing node model.dbt_youtube.g_video_rankings
+[0m13:49:06.941081 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_content_mix"
+[0m13:49:06.944591 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_youtube.g_video_rankings"
+[0m13:49:06.945593 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_upload_heatmap"
+[0m13:49:06.945593 [debug] [Thread-4 (]: On model.dbt_youtube.g_content_mix: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_content_mix"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_content_mix__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with v as (
+  select
+    video_id
+    -- SỬA LỖI: Dùng MIN (Postgres) và cột CHỮ HOA
+    , MIN("VIEW_COUNT")    as "VIEW_COUNT"
+    , MIN("LIKE_COUNT")    as "LIKE_COUNT"
+    , MIN("COMMENT_COUNT") as "COMMENT_COUNT"
+    , MIN("VIDEO_TYPE")    as "VIDEO_TYPE"
+  from "youtube_raw_db"."public"."stg_videos"
+  group by video_id
+)
+select
+  "VIDEO_TYPE" as video_type
+  , count(*)   as videos_count
+  , sum("VIEW_COUNT") as total_views
+  , avg("LIKE_COUNT"   / nullif("VIEW_COUNT",0))     as avg_like_per_view
+  , avg("COMMENT_COUNT"/ nullif("VIEW_COUNT",0))     as avg_comment_per_view
+from v
+group by 1
+order by videos_count desc
+  );
+  
+[0m13:49:06.946594 [debug] [Thread-2 (]: On model.dbt_youtube.g_upload_heatmap: BEGIN
+[0m13:49:06.947592 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:49:06.950593 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.g_video_rankings"
+[0m13:49:06.951599 [debug] [Thread-1 (]: On model.dbt_youtube.g_video_rankings: BEGIN
+[0m13:49:06.951599 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:49:06.954643 [debug] [Thread-3 (]: SQL status: BEGIN in 0.039 seconds
+[0m13:49:06.954643 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_duration_distribution"
+[0m13:49:06.955645 [debug] [Thread-3 (]: On model.dbt_youtube.g_duration_distribution: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_duration_distribution"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_duration_distribution__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with v as (
+  select
+    video_id
+    -- SỬA LỖI: Dùng MIN và cột CHỮ HOA
+    , MIN("DURATION_SECONDS") as "DURATION_SECONDS"
+    , MIN(case
+        when "DURATION_SECONDS" <   60 then '0-1m'
+        when "DURATION_SECONDS" <  300 then '1-5m'
+        when "DURATION_SECONDS" <  900 then '5-15m'
+        when "DURATION_SECONDS" < 1800 then '15-30m'
+        when "DURATION_SECONDS" < 3600 then '30-60m'
+        else '60m+'
+      end) as "DURATION_BUCKET"
+  from "youtube_raw_db"."public"."stg_videos"
+  group by video_id
+)
+select
+  "DURATION_BUCKET" as duration_bucket
+  , count(*)        as videos_count
+  , avg("DURATION_SECONDS") as avg_duration_sec
+from v
+group by 1
+order by
+  -- SỬA LỖI: Dùng đúng bí danh CHỮ HOA
+  case "DURATION_BUCKET"
+    when '0-1m'   then 1
+    when '1-5m'   then 2
+    when '5-15m'  then 3
+    when '15-30m' then 4
+    when '30-60m' then 5
+    else 6
+  end
+  );
+  
+[0m13:49:06.966578 [debug] [Thread-2 (]: SQL status: BEGIN in 0.020 seconds
+[0m13:49:06.968085 [debug] [Thread-1 (]: SQL status: BEGIN in 0.016 seconds
+[0m13:49:06.968589 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_upload_heatmap"
+[0m13:49:06.968589 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.g_video_rankings"
+[0m13:49:06.968589 [debug] [Thread-2 (]: On model.dbt_youtube.g_upload_heatmap: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_upload_heatmap"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_upload_heatmap__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with v as (
+  select
+    video_id
+    -- SỬA LỖI 1 & 2: Dùng MIN (Postgres) VÀ cột CHỮ HOA
+    , MIN("VIDEO_PUBLISHED_AT") as "VIDEO_PUBLISHED_AT"
+  from "youtube_raw_db"."public"."stg_videos"
+  -- SỬA LỖI 2: Dùng cột CHỮ HOA
+  where "VIDEO_PUBLISHED_AT" is not null
+  group by video_id
+)
+select
+  extract(dow  from "VIDEO_PUBLISHED_AT") as published_dow   -- 0=Sun
+  , extract(hour from "VIDEO_PUBLISHED_AT") as published_hour -- 0..23
+  , count(*) as videos_count
+from v
+group by 1,2
+  );
+  
+[0m13:49:06.970150 [debug] [Thread-1 (]: On model.dbt_youtube.g_video_rankings: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_video_rankings"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_video_rankings__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with v as (
+  select
+    video_id
+    -- SỬA LỖI 1: Dùng MIN (Postgres) thay vì any_value (Snowflake)
+    -- SỬA LỖI 2: Dùng tên cột CHỮ HOA (input từ stg_videos)
+    , MIN(video_title)           as "VIDEO_TITLE"
+    , MIN(video_desc)            as "VIDEO_DESC"
+    , MIN("VIDEO_PUBLISHED_AT")  as "VIDEO_PUBLISHED_AT"
+    , MIN("DURATION_SECONDS")    as "DURATION_SECONDS"
+    , MIN("VIEW_COUNT")          as "VIEW_COUNT"
+    , MIN("LIKE_COUNT")          as "LIKE_COUNT"
+    , MIN("COMMENT_COUNT")       as "COMMENT_COUNT"
+  from "youtube_raw_db"."public"."stg_videos"
+  where video_title is not null
+  group by video_id
+)
+select
+  v.video_id
+  , v."VIDEO_TITLE"
+  , v."VIDEO_DESC"
+  , v."VIDEO_PUBLISHED_AT"::date as published_date
+  , v."DURATION_SECONDS"
+  , v."VIEW_COUNT"
+  , v."LIKE_COUNT"
+  , v."COMMENT_COUNT"
+  , v."LIKE_COUNT"   / nullif(v."VIEW_COUNT", 0) as like_per_view
+  , v."COMMENT_COUNT"/ nullif(v."VIEW_COUNT", 0) as comment_per_view
+  , row_number() over (order by v."VIEW_COUNT" desc)                       as rn_by_views
+  , row_number() over (order by v."LIKE_COUNT"/nullif(v."VIEW_COUNT",0) desc)     as rn_by_like_rate
+  , row_number() over (order by v."COMMENT_COUNT"/nullif(v."VIEW_COUNT",0) desc) as rn_by_comment_rate
+  , row_number() over (order by v."VIDEO_PUBLISHED_AT" desc)                as rn_newest
+from v
+  );
+  
+[0m13:49:07.034443 [debug] [Thread-2 (]: SQL status: SELECT 128 in 0.064 seconds
+[0m13:49:07.043178 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_upload_heatmap"
+[0m13:49:07.043178 [debug] [Thread-2 (]: On model.dbt_youtube.g_upload_heatmap: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_upload_heatmap"} */
+alter table "youtube_raw_db"."public"."g_upload_heatmap" rename to "g_upload_heatmap__dbt_backup"
+[0m13:49:07.046701 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:49:07.049707 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_upload_heatmap"
+[0m13:49:07.049707 [debug] [Thread-2 (]: On model.dbt_youtube.g_upload_heatmap: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_upload_heatmap"} */
+alter table "youtube_raw_db"."public"."g_upload_heatmap__dbt_tmp" rename to "g_upload_heatmap"
+[0m13:49:07.052211 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:49:07.054086 [debug] [Thread-2 (]: On model.dbt_youtube.g_upload_heatmap: COMMIT
+[0m13:49:07.054086 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_upload_heatmap"
+[0m13:49:07.055090 [debug] [Thread-2 (]: On model.dbt_youtube.g_upload_heatmap: COMMIT
+[0m13:49:07.058341 [debug] [Thread-2 (]: SQL status: COMMIT in 0.003 seconds
+[0m13:49:07.060351 [debug] [Thread-2 (]: Applying DROP to: "youtube_raw_db"."public"."g_upload_heatmap__dbt_backup"
+[0m13:49:07.062369 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_upload_heatmap"
+[0m13:49:07.063374 [debug] [Thread-2 (]: On model.dbt_youtube.g_upload_heatmap: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_upload_heatmap"} */
+drop table if exists "youtube_raw_db"."public"."g_upload_heatmap__dbt_backup" cascade
+[0m13:49:07.066916 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.003 seconds
+[0m13:49:07.068923 [debug] [Thread-2 (]: On model.dbt_youtube.g_upload_heatmap: Close
+[0m13:49:07.068923 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A4490BE0>]}
+[0m13:49:07.069923 [info ] [Thread-2 (]: 10 of 13 OK created sql table model public.g_upload_heatmap .................... [[32mSELECT 128[0m in 0.14s]
+[0m13:49:07.070922 [debug] [Thread-2 (]: Finished running node model.dbt_youtube.g_upload_heatmap
+[0m13:49:07.070922 [debug] [Thread-2 (]: Began running node model.dbt_youtube.g_playlist_performance
+[0m13:49:07.071923 [info ] [Thread-2 (]: 12 of 13 START sql table model public.g_playlist_performance ................... [RUN]
+[0m13:49:07.073072 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.g_upload_heatmap, now model.dbt_youtube.g_playlist_performance)
+[0m13:49:07.074361 [debug] [Thread-2 (]: Began compiling node model.dbt_youtube.g_playlist_performance
+[0m13:49:07.077370 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_youtube.g_playlist_performance"
+[0m13:49:07.079395 [debug] [Thread-2 (]: Began executing node model.dbt_youtube.g_playlist_performance
+[0m13:49:07.083558 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_youtube.g_playlist_performance"
+[0m13:49:07.084564 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_playlist_performance"
+[0m13:49:07.085564 [debug] [Thread-2 (]: On model.dbt_youtube.g_playlist_performance: BEGIN
+[0m13:49:07.085564 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:49:07.121786 [debug] [Thread-2 (]: SQL status: BEGIN in 0.036 seconds
+[0m13:49:07.122792 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_playlist_performance"
+[0m13:49:07.123791 [debug] [Thread-2 (]: On model.dbt_youtube.g_playlist_performance: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_playlist_performance"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_playlist_performance__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with pi as (
+  select
+    playlist_id
+    , count(distinct video_id) as items_detected
+  from "youtube_raw_db"."public"."stg_videos"
+  group by playlist_id
+),
+best as (
+  select
+    v.playlist_id
+    , v.video_id
+    -- SỬA LỖI: Dùng MIN (Postgres) thay vì any_value
+    , MIN(v.video_title) as "VIDEO_TITLE"
+    , MIN(v."VIEW_COUNT")  as "VIEW_COUNT"
+    , row_number() over (partition by v.playlist_id order by MIN(v."VIEW_COUNT") desc) as rn
+  from "youtube_raw_db"."public"."stg_videos" v
+  group by v.playlist_id, v.video_id
+)
+select
+  p.playlist_id
+  , p.playlist_title                 as "PLAYLIST_TITLE"
+  , p."ITEM_COUNT"                   as item_count_declared
+  , pi.items_detected
+  , p.channel_id
+  , p.channel_title                  as "CHANNEL_TITLE"
+  , p."PLAYLIST_THUMBNAIL_URL"     as playlist_thumbnail_url
+  , b.video_id                       as top_video_id
+  , b."VIDEO_TITLE"                  as top_video_title
+  , b."VIEW_COUNT"                   as top_video_views
+from "youtube_raw_db"."public"."stg_playlists" p
+left join pi   on pi.playlist_id = p.playlist_id
+left join best b on b.playlist_id = p.playlist_id and b.rn = 1
+  );
+  
+[0m13:49:07.208973 [debug] [Thread-4 (]: SQL status: SELECT 4 in 0.261 seconds
+[0m13:49:07.212793 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_content_mix"
+[0m13:49:07.213299 [debug] [Thread-4 (]: On model.dbt_youtube.g_content_mix: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_content_mix"} */
+alter table "youtube_raw_db"."public"."g_content_mix" rename to "g_content_mix__dbt_backup"
+[0m13:49:07.215218 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:49:07.215757 [debug] [Thread-3 (]: SQL status: SELECT 6 in 0.259 seconds
+[0m13:49:07.219189 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_content_mix"
+[0m13:49:07.221703 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_duration_distribution"
+[0m13:49:07.222708 [debug] [Thread-4 (]: On model.dbt_youtube.g_content_mix: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_content_mix"} */
+alter table "youtube_raw_db"."public"."g_content_mix__dbt_tmp" rename to "g_content_mix"
+[0m13:49:07.223259 [debug] [Thread-3 (]: On model.dbt_youtube.g_duration_distribution: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_duration_distribution"} */
+alter table "youtube_raw_db"."public"."g_duration_distribution__dbt_tmp" rename to "g_duration_distribution"
+[0m13:49:07.225265 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:49:07.225265 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:49:07.227492 [debug] [Thread-3 (]: On model.dbt_youtube.g_duration_distribution: COMMIT
+[0m13:49:07.228499 [debug] [Thread-4 (]: On model.dbt_youtube.g_content_mix: COMMIT
+[0m13:49:07.229499 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_duration_distribution"
+[0m13:49:07.229499 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_content_mix"
+[0m13:49:07.230496 [debug] [Thread-3 (]: On model.dbt_youtube.g_duration_distribution: COMMIT
+[0m13:49:07.230496 [debug] [Thread-4 (]: On model.dbt_youtube.g_content_mix: COMMIT
+[0m13:49:07.232548 [debug] [Thread-4 (]: SQL status: COMMIT in 0.002 seconds
+[0m13:49:07.233571 [debug] [Thread-3 (]: SQL status: COMMIT in 0.003 seconds
+[0m13:49:07.236299 [debug] [Thread-4 (]: Applying DROP to: "youtube_raw_db"."public"."g_content_mix__dbt_backup"
+[0m13:49:07.238300 [debug] [Thread-3 (]: Applying DROP to: "youtube_raw_db"."public"."g_duration_distribution__dbt_backup"
+[0m13:49:07.239299 [debug] [Thread-4 (]: Using postgres connection "model.dbt_youtube.g_content_mix"
+[0m13:49:07.240299 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_duration_distribution"
+[0m13:49:07.240299 [debug] [Thread-4 (]: On model.dbt_youtube.g_content_mix: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_content_mix"} */
+drop table if exists "youtube_raw_db"."public"."g_content_mix__dbt_backup" cascade
+[0m13:49:07.241547 [debug] [Thread-3 (]: On model.dbt_youtube.g_duration_distribution: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_duration_distribution"} */
+drop table if exists "youtube_raw_db"."public"."g_duration_distribution__dbt_backup" cascade
+[0m13:49:07.243028 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m13:49:07.245332 [debug] [Thread-3 (]: On model.dbt_youtube.g_duration_distribution: Close
+[0m13:49:07.245332 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A274BAC0>]}
+[0m13:49:07.246331 [debug] [Thread-4 (]: SQL status: DROP TABLE in 0.004 seconds
+[0m13:49:07.247330 [info ] [Thread-3 (]: 9 of 13 OK created sql table model public.g_duration_distribution .............. [[32mSELECT 6[0m in 0.38s]
+[0m13:49:07.248330 [debug] [Thread-4 (]: On model.dbt_youtube.g_content_mix: Close
+[0m13:49:07.249330 [debug] [Thread-3 (]: Finished running node model.dbt_youtube.g_duration_distribution
+[0m13:49:07.250337 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A43E4640>]}
+[0m13:49:07.250337 [debug] [Thread-3 (]: Began running node model.dbt_youtube.g_channel_overview
+[0m13:49:07.251844 [info ] [Thread-4 (]: 8 of 13 OK created sql table model public.g_content_mix ........................ [[32mSELECT 4[0m in 0.39s]
+[0m13:49:07.251844 [info ] [Thread-3 (]: 13 of 13 START sql table model public.g_channel_overview ....................... [RUN]
+[0m13:49:07.253359 [debug] [Thread-4 (]: Finished running node model.dbt_youtube.g_content_mix
+[0m13:49:07.253359 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_youtube.g_duration_distribution, now model.dbt_youtube.g_channel_overview)
+[0m13:49:07.254367 [debug] [Thread-3 (]: Began compiling node model.dbt_youtube.g_channel_overview
+[0m13:49:07.258844 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_youtube.g_channel_overview"
+[0m13:49:07.260105 [debug] [Thread-3 (]: Began executing node model.dbt_youtube.g_channel_overview
+[0m13:49:07.265627 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_youtube.g_channel_overview"
+[0m13:49:07.266628 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_channel_overview"
+[0m13:49:07.267630 [debug] [Thread-3 (]: On model.dbt_youtube.g_channel_overview: BEGIN
+[0m13:49:07.267630 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:49:07.274335 [debug] [Thread-2 (]: SQL status: SELECT 239 in 0.149 seconds
+[0m13:49:07.277341 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_playlist_performance"
+[0m13:49:07.277341 [debug] [Thread-2 (]: On model.dbt_youtube.g_playlist_performance: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_playlist_performance"} */
+alter table "youtube_raw_db"."public"."g_playlist_performance__dbt_tmp" rename to "g_playlist_performance"
+[0m13:49:07.279854 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:49:07.281856 [debug] [Thread-2 (]: On model.dbt_youtube.g_playlist_performance: COMMIT
+[0m13:49:07.283021 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_playlist_performance"
+[0m13:49:07.285321 [debug] [Thread-2 (]: On model.dbt_youtube.g_playlist_performance: COMMIT
+[0m13:49:07.291815 [debug] [Thread-2 (]: SQL status: COMMIT in 0.006 seconds
+[0m13:49:07.296227 [debug] [Thread-2 (]: Applying DROP to: "youtube_raw_db"."public"."g_playlist_performance__dbt_backup"
+[0m13:49:07.298227 [debug] [Thread-2 (]: Using postgres connection "model.dbt_youtube.g_playlist_performance"
+[0m13:49:07.298227 [debug] [Thread-2 (]: On model.dbt_youtube.g_playlist_performance: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_playlist_performance"} */
+drop table if exists "youtube_raw_db"."public"."g_playlist_performance__dbt_backup" cascade
+[0m13:49:07.300227 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m13:49:07.302743 [debug] [Thread-2 (]: On model.dbt_youtube.g_playlist_performance: Close
+[0m13:49:07.305263 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A2C5CE50>]}
+[0m13:49:07.307264 [debug] [Thread-3 (]: SQL status: BEGIN in 0.040 seconds
+[0m13:49:07.306263 [info ] [Thread-2 (]: 12 of 13 OK created sql table model public.g_playlist_performance .............. [[32mSELECT 239[0m in 0.23s]
+[0m13:49:07.308264 [debug] [Thread-3 (]: Using postgres connection "model.dbt_youtube.g_channel_overview"
+[0m13:49:07.309262 [debug] [Thread-2 (]: Finished running node model.dbt_youtube.g_playlist_performance
+[0m13:49:07.309874 [debug] [Thread-3 (]: On model.dbt_youtube.g_channel_overview: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_channel_overview"} */
+
+  
+    
+
+  create  table "youtube_raw_db"."public"."g_channel_overview__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with ch as (
+  select
+    -- SỬA LỖI: Gọi các cột chữ thường từ stg_channels
+    channel_id,
+    title as "CHANNEL_TITLE",
+    "customUrl" as "CHANNEL_CUSTOM_URL",
+    published_at as "CHANNEL_PUBLISHED_AT",
+    country,
+    subscriber_count,
+    view_count AS "CHANNEL_VIEW_COUNT",
+    video_count AS "CHANNEL_VIDEO_COUNT",
+    channel_thumbnail_url 
+  from "youtube_raw_db"."public"."stg_channels"
+),
+v as (
+  -- 1 dòng/video để tính Avg Length, Avg Rate
+  select
+    video_id
+    -- SỬA LỖI: Dùng MIN (Postgres) và cột CHỮ HOA (từ stg_videos)
+    , MIN("DURATION_SECONDS") as "DURATION_SECONDS"
+    , MIN("VIEW_COUNT")       as "VIEW_COUNT"
+    , MIN("LIKE_COUNT")       as "LIKE_COUNT"
+    , MIN("COMMENT_COUNT")    as "COMMENT_COUNT"
+  from "youtube_raw_db"."public"."stg_videos"
+  group by video_id
+)
+select
+  ch.*,
+  avg(v."DURATION_SECONDS")                           as avg_video_length_sec,
+  avg(v."LIKE_COUNT" / nullif(v."VIEW_COUNT", 0))     as avg_like_per_view,
+  avg(v."COMMENT_COUNT" / nullif(v."VIEW_COUNT", 0))  as avg_comment_per_view
+from ch
+left join v on 1=1 -- cross join để lấy avg trên toàn bộ video
+group by
+  -- SỬA LỖI: Group by các cột chữ thường từ CTE 'ch'
+  ch.channel_id, ch."CHANNEL_TITLE", ch."CHANNEL_CUSTOM_URL", ch."CHANNEL_PUBLISHED_AT", ch.country,
+  ch.subscriber_count, ch."CHANNEL_VIEW_COUNT", ch."CHANNEL_VIDEO_COUNT", ch.channel_thumbnail_url
+  );
+  
+[0m13:49:07.311972 [debug] [Thread-3 (]: Postgres adapter: Postgres error: column "published_at" does not exist
+LINE 20:     published_at as "CHANNEL_PUBLISHED_AT",
+             ^
+
+[0m13:49:07.312979 [debug] [Thread-3 (]: On model.dbt_youtube.g_channel_overview: ROLLBACK
+[0m13:49:07.315486 [debug] [Thread-3 (]: On model.dbt_youtube.g_channel_overview: Close
+[0m13:49:07.319326 [debug] [Thread-3 (]: Database Error in model g_channel_overview (models\gold\g_channel_overview.sql)
+  column "published_at" does not exist
+  LINE 20:     published_at as "CHANNEL_PUBLISHED_AT",
+               ^
+  compiled code at target\run\dbt_youtube\models\gold\g_channel_overview.sql
+[0m13:49:07.320324 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A2D4CF40>]}
+[0m13:49:07.320324 [error] [Thread-3 (]: 13 of 13 ERROR creating sql table model public.g_channel_overview .............. [[31mERROR[0m in 0.07s]
+[0m13:49:07.321837 [debug] [Thread-3 (]: Finished running node model.dbt_youtube.g_channel_overview
+[0m13:49:07.322854 [debug] [Thread-7 (]: Marking all children of 'model.dbt_youtube.g_channel_overview' to be skipped because of status 'error'.  Reason: Database Error in model g_channel_overview (models\gold\g_channel_overview.sql)
+  column "published_at" does not exist
+  LINE 20:     published_at as "CHANNEL_PUBLISHED_AT",
+               ^
+  compiled code at target\run\dbt_youtube\models\gold\g_channel_overview.sql.
+[0m13:49:07.409412 [debug] [Thread-1 (]: SQL status: SELECT 11294 in 0.438 seconds
+[0m13:49:07.412759 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.g_video_rankings"
+[0m13:49:07.412759 [debug] [Thread-1 (]: On model.dbt_youtube.g_video_rankings: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_video_rankings"} */
+alter table "youtube_raw_db"."public"."g_video_rankings" rename to "g_video_rankings__dbt_backup"
+[0m13:49:07.414954 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:49:07.416982 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.g_video_rankings"
+[0m13:49:07.417959 [debug] [Thread-1 (]: On model.dbt_youtube.g_video_rankings: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_video_rankings"} */
+alter table "youtube_raw_db"."public"."g_video_rankings__dbt_tmp" rename to "g_video_rankings"
+[0m13:49:07.419958 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:49:07.421463 [debug] [Thread-1 (]: On model.dbt_youtube.g_video_rankings: COMMIT
+[0m13:49:07.422469 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.g_video_rankings"
+[0m13:49:07.422469 [debug] [Thread-1 (]: On model.dbt_youtube.g_video_rankings: COMMIT
+[0m13:49:07.436899 [debug] [Thread-1 (]: SQL status: COMMIT in 0.014 seconds
+[0m13:49:07.439915 [debug] [Thread-1 (]: Applying DROP to: "youtube_raw_db"."public"."g_video_rankings__dbt_backup"
+[0m13:49:07.439915 [debug] [Thread-1 (]: Using postgres connection "model.dbt_youtube.g_video_rankings"
+[0m13:49:07.441420 [debug] [Thread-1 (]: On model.dbt_youtube.g_video_rankings: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_youtube", "target_name": "dev", "node_id": "model.dbt_youtube.g_video_rankings"} */
+drop table if exists "youtube_raw_db"."public"."g_video_rankings__dbt_backup" cascade
+[0m13:49:07.446200 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.005 seconds
+[0m13:49:07.447201 [debug] [Thread-1 (]: On model.dbt_youtube.g_video_rankings: Close
+[0m13:49:07.449201 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baa02bc0-900c-4f69-86fb-6192b7c75117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A4490A00>]}
+[0m13:49:07.449201 [info ] [Thread-1 (]: 11 of 13 OK created sql table model public.g_video_rankings .................... [[32mSELECT 11294[0m in 0.52s]
+[0m13:49:07.450202 [debug] [Thread-1 (]: Finished running node model.dbt_youtube.g_video_rankings
+[0m13:49:07.451705 [debug] [MainThread]: Using postgres connection "master"
+[0m13:49:07.451705 [debug] [MainThread]: On master: BEGIN
+[0m13:49:07.452710 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:49:07.464745 [debug] [MainThread]: SQL status: BEGIN in 0.012 seconds
+[0m13:49:07.465769 [debug] [MainThread]: On master: COMMIT
+[0m13:49:07.465769 [debug] [MainThread]: Using postgres connection "master"
+[0m13:49:07.466767 [debug] [MainThread]: On master: COMMIT
+[0m13:49:07.467745 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m13:49:07.467745 [debug] [MainThread]: On master: Close
+[0m13:49:07.468745 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:49:07.468745 [debug] [MainThread]: Connection 'list_youtube_raw_db' was properly closed.
+[0m13:49:07.469745 [debug] [MainThread]: Connection 'list_youtube_raw_db_public' was properly closed.
+[0m13:49:07.469745 [debug] [MainThread]: Connection 'model.dbt_youtube.g_video_rankings' was properly closed.
+[0m13:49:07.470748 [debug] [MainThread]: Connection 'model.dbt_youtube.g_playlist_performance' was properly closed.
+[0m13:49:07.470748 [debug] [MainThread]: Connection 'model.dbt_youtube.g_channel_overview' was properly closed.
+[0m13:49:07.470748 [debug] [MainThread]: Connection 'model.dbt_youtube.g_content_mix' was properly closed.
+[0m13:49:07.471774 [info ] [MainThread]: 
+[0m13:49:07.472967 [info ] [MainThread]: Finished running 6 table models, 7 view models in 0 hours 0 minutes and 1.15 seconds (1.15s).
+[0m13:49:07.474981 [debug] [MainThread]: Command end result
+[0m13:49:07.503306 [debug] [MainThread]: Wrote artifact WritableManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\manifest.json
+[0m13:49:07.505430 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\StudyZone\Project\mtp-data\dbt_youtube\target\semantic_manifest.json
+[0m13:49:07.511654 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\StudyZone\Project\mtp-data\dbt_youtube\target\run_results.json
+[0m13:49:07.512742 [info ] [MainThread]: 
+[0m13:49:07.513742 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m13:49:07.513742 [info ] [MainThread]: 
+[0m13:49:07.513742 [error] [MainThread]: [31mFailure in model g_channel_overview (models\gold\g_channel_overview.sql)[0m
+[0m13:49:07.515246 [error] [MainThread]:   Database Error in model g_channel_overview (models\gold\g_channel_overview.sql)
+  column "published_at" does not exist
+  LINE 20:     published_at as "CHANNEL_PUBLISHED_AT",
+               ^
+  compiled code at target\run\dbt_youtube\models\gold\g_channel_overview.sql
+[0m13:49:07.515246 [info ] [MainThread]: 
+[0m13:49:07.516387 [info ] [MainThread]:   compiled code at target\compiled\dbt_youtube\models\gold\g_channel_overview.sql
+[0m13:49:07.517387 [info ] [MainThread]: 
+[0m13:49:07.517994 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=13
+[0m13:49:07.517994 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 3 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:49:07.519068 [debug] [MainThread]: Command `dbt run` failed at 13:49:07.519068 after 2.49 seconds
+[0m13:49:07.520099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A030CF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002129FC5EDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000212A2B6AE60>]}
+[0m13:49:07.520099 [debug] [MainThread]: Flushing usage events
+[0m13:49:10.757808 [debug] [MainThread]: An error was encountered while trying to flush usage events
