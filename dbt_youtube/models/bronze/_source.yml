@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw_postgres_data  # Tên nhóm nguồn
+    database: youtube_raw_db  # Tên database trong docker-compose
+    schema: public            # Schema bạn load data vào
+
+    # Liệt kê các bảng thô
+    tables:
+      - name: raw_channels
+      - name: raw_playlists
+      - name: raw_playlist_items
+      - name: raw_video_stats

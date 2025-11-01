@@ -1,0 +1,17 @@
+
+  create view "youtube_raw_db"."public"."br_playlists__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+    playlist_id,
+    playlist_title,
+    playlist_desc,
+    published_at::timestamp AS "PUBLISHED_AT",
+    channel_id,
+    thumb_high AS "PLAYLIST_THUMBNAIL_URL",
+    item_count::bigint AS "ITEM_COUNT"
+FROM "youtube_raw_db"."public"."raw_playlists"
+  );
